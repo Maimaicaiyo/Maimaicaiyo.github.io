@@ -1,6 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>天猫618弹窗关闭</title>
+    <url>/2020/06/03/%E5%A4%A9%E7%8C%AB618%E5%BC%B9%E7%AA%97%E5%85%B3%E9%97%AD/</url>
+    <content><![CDATA[<p>临近电商大促，这些弹窗就多了起来。我已经很久没看到广告弹窗了，因为用了火绒来拦截弹窗，效果还不错。这是一个天猫活动弹窗，火绒居然没有拦截。还好这个弹窗没那么流氓，是直接按退出就真是退出了，不会跳转到浏览器打开网页。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%B9%E7%AA%97.gif" alt=""></p>
+<a id="more"></a>
+
+<p>1.基本方法</p>
+<p>天猫618弹窗时先不要关掉，按Ctrl+Alt+Delete,打开资源管理器，能看到弹窗进程：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210618.png" alt=""></p>
+<p>右键，点开属性，可以看到安装位置：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210814.png" alt=""></p>
+<p>居然是搜狗输入法的弹窗，吃香很难看啊。打开<code>SogouInput\9.3.0.3129</code>目录，找到<code>ShowInfo.exe</code>，删除</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603211233.png" alt=""></p>
+<p>2.进阶方法</p>
+<p>如果上述方法无效，则尝试以下方法：</p>
+<p>Windows Defender 防火墙&gt;&gt;高级设置，然后配置入站规则。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604112915.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%A5%E7%AB%99%E8%A7%84%E5%88%99.gif" alt=""></p>
+<p>重启即可。</p>
+<p>3.如果上述方法都不行，只能出杀手锏了。</p>
+<p>创建一个TXT里面随便写东西，改成同样的文件名<code>ShowInfo.exe</code>，替换掉原版，修改属性为只读不可写入。因为不可写入所以输入法没法联网更新这个文件，而下载新文件也会由于重复名称失败。右键属性，常规只读，然后点安全，编辑，everyone,拒绝打勾。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130021.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130824.png" alt=""></p>
+<p>成功！</p>
+]]></content>
+      <categories>
+        <category>小妙招</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2020/06/04/test/</url>
+    <content><![CDATA[<blockquote>
+<p><font color="ff0000">版权声明：本文为原创，欢迎转载，转载请注明出处，勿用于商业用途！</font></p>
+</blockquote>
+<p>&emsp;&emsp;答自己：<br>想想自己的腿，如果明天<br>姑娘的腿，还没我的腿好看，还没我的细，还没我的白<br>走路的风姿也不够我风骚妖娆<br>我拜腿？我拜个屁！我看腿？我看个屁<br>我自己的更好看，更舒服，更白细<br>&emsp;&emsp;怀抱着这样的心态修炼？<br>CC德六字真言：真好，真细，真白<br>摸了摸自己的腿，指日可待<br>这个世界，自己好玩，更重要<br>&emsp;&emsp;自己的好玩比男女朋友好玩，更重要！<font color="ff0000"> ; </font></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo博客优化</title>
+    <url>/2020/05/30/hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<p>hexo下文章的排版如何优化：宽度，字体，图片大小</p>
+<p>图片太大</p>
+<p>自定义url，默认的是<code>/发表日期/标题</code></p>
+<p>加载太慢了&gt;&gt;&gt;第三方cdn加速</p>
+<p>更新了文章，发表时间也没更新</p>
+<p>升级hexo主题</p>
+<a id="more"></a>
+
+<p>第三方工具：</p>
+<p>搜狐的畅言开放评论</p>
+<p><a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>阅读次数</p>
+<h3 id="1-设置标签、分类的界面"><a href="#1-设置标签、分类的界面" class="headerlink" title="1.设置标签、分类的界面"></a>1.设置标签、分类的界面</h3><p>设置菜单那里，我设置了显示标签、分类、关于几个选项。但是点击进去，却报错：404</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529095825.png" alt=""></p>
+<p>只需要在source 目录下创建文件即可</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">hexo new page 'about'(tags/categories)</span><br></pre></td></tr></table></figure>
+
+<p>有时候在vscode终端/powershell 创建报错，需要用git bash创建</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529095402.png" alt=""></p>
+<p>修改这tags和categories文件夹中的index.md文件，新增type属性，如下：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529100522.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2020-05-29 09:51:59</span><br><span class="line">type: tags</span><br></pre></td></tr></table></figure>
+
+<p>修改好，还是报404，url出现 <code>%20</code>，空格的意思<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529103304.png" alt=""></p>
+<p>theme下面的配置文件，<code>||</code>之前出现了空格，删除空格即可</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529102210.png" alt=""></p>
+<h3 id="2-实现点击出现桃心效果"><a href="#2-实现点击出现桃心效果" class="headerlink" title="2. 实现点击出现桃心效果"></a>2. 实现点击出现桃心效果</h3><p>在themes/hexo-theme-next/source/js/src下新建文件 clicklove.js ，接着把该链接下的代码拷贝粘贴到 clicklove.js 文件中。<br>代码如下：</p>
+<ol start="4">
+<li><pre><code class="js">!<span class="function"><span class="keyword">function</span>(<span class="params">e,t,a</span>)</span>{<span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>)</span>{c(<span class="string">".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"</span>),o(),r()}<span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>)</span>{<span class="keyword">for</span>(<span class="keyword">var</span> e=<span class="number">0</span>;e&lt;d.length;e++)d[e].alpha&lt;=<span class="number">0</span>?(t.body.removeChild(d[e].el),d.splice(e,<span class="number">1</span>)):(d[e].y--,d[e].scale+=<span class="number">.004</span>,d[e].alpha-=<span class="number">.013</span>,d[e].el.style.cssText=<span class="string">"left:"</span>+d[e].x+<span class="string">"px;top:"</span>+d[e].y+<span class="string">"px;opacity:"</span>+d[e].alpha+<span class="string">";transform:scale("</span>+d[e].scale+<span class="string">","</span>+d[e].scale+<span class="string">") rotate(45deg);background:"</span>+d[e].color+<span class="string">";z-index:99999"</span>);requestAnimationFrame(r)}<span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params"></span>)</span>{<span class="keyword">var</span> t=<span class="string">"function"</span>==<span class="keyword">typeof</span> e.onclick&amp;&amp;e.onclick;e.onclick=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{t&amp;&amp;t(),i(e)}}<span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>)</span>{<span class="keyword">var</span> a=t.createElement(<span class="string">"div"</span>);a.className=<span class="string">"heart"</span>,d.push({<span class="attr">el</span>:a,<span class="attr">x</span>:e.clientX<span class="number">-5</span>,<span class="attr">y</span>:e.clientY<span class="number">-5</span>,<span class="attr">scale</span>:<span class="number">1</span>,<span class="attr">alpha</span>:<span class="number">1</span>,<span class="attr">color</span>:s()}),t.body.appendChild(a)}<span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params">e</span>)</span>{<span class="keyword">var</span> a=t.createElement(<span class="string">"style"</span>);a.type=<span class="string">"text/css"</span>;<span class="keyword">try</span>{a.appendChild(t.createTextNode(e))}<span class="keyword">catch</span>(t){a.styleSheet.cssText=e}t.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(a)}<span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>)</span>{<span class="keyword">return</span><span class="string">"rgb("</span>+(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">","</span>+(<span class="number">255</span><span class="built_in">Math</span>.random())+<span class="string">","</span>+~~(<span class="number">255</span><span class="built_in">Math</span>.random())+<span class="string">")"</span>}<span class="keyword">var</span> d=[];e.requestAnimationFrame=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{<span class="keyword">return</span> e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{setTimeout(e,<span class="number">1e3</span>/<span class="number">60</span>)}}(),n()}(<span class="built_in">window</span>,<span class="built_in">document</span>);
+&lt;!--￼<span class="number">2</span>--&gt;
+
+
+</code></pre>
+</li>
+</ol>
+<h3 id="3-设置网站的图标Favicon"><a href="#3-设置网站的图标Favicon" class="headerlink" title="3. 设置网站的图标Favicon"></a>3. 设置网站的图标Favicon</h3><p>在<a href="http://www.easyicon.net/" target="_blank" rel="noopener">EasyIcon</a>中找一张（32*32）的<code>ico</code>图标,或者去别的网站下载或者制作，并将图标名称改为<code>favicon.ico</code>，然后把图标放在<code>/themes/hexo-theme-next/source/images</code>里，并且修改主题配置文件：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-pig.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-pig.png</span></span><br></pre></td></tr></table></figure>
+
+<p>只需要把images目录下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">favicon-16x16-next.png文件和</span><br><span class="line">favicon-32x32-next.png文件替换成自己喜欢的就可以了</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-添加顶部加载条"><a href="#4-添加顶部加载条" class="headerlink" title="4. 添加顶部加载条"></a>4. 添加顶部加载条</h3><h3 id="5-阅读次数-热度"><a href="#5-阅读次数-热度" class="headerlink" title="5.阅读次数/热度"></a>5.阅读次数/热度</h3><p>使用<a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>实现，enable属性改为<code>true</code></p>
+<p>“阅读次数”这些字也可以改</p>
+<p>next主题集成leanCloud，打开\blog-generator\themes\hexo-theme-next/layout/_macro/post.swig,在画红线的区域添加℃。</p>
+<p>然后打开，<code>\blog-generator\themes\hexo-theme-next/languages/zh-Hans.yml</code>,将画红框的改为热度就可以了</p>
+<p>创建应用：控制台 -&gt; 创建应用（开发版）<br>应用名称可以随意输入，后面还可以修改，我用的是 test；<br>创建 Class：点击刚创建的 test 应用，创建一个 Class 表用来保存我们的博客访问数据。<br>此处创建的 Class 名字必须为 Counter，用来保证与 NexT 主题的修改相兼容；<br>ACL 权限选择 无限制，避免后续因为权限的问题导致次数统计显示不正常</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529140833.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529141647.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529142527.png" alt=""></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">leancloud_visitors:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="string">xxx(leancloud</span> <span class="string">上面的</span> <span class="string">AppID)</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="string">xxx(leancloud</span> <span class="string">上面的</span> <span class="string">AppKey)</span></span><br></pre></td></tr></table></figure>
+
+<p><code>进文章详情可以看到阅读次数</code></p>
+<h3 id="6-评论功能（valine）"><a href="#6-评论功能（valine）" class="headerlink" title="6.评论功能（valine）"></a>6.评论功能（valine）</h3><p>也用到<a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>，用同一个appid和appkey。而且只用创建一个Class，当你开启了valine，自动加载了一个<code>Comment</code> 的Class</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530005045.png" alt=""></p>
+<h3 id="7-阅读全文"><a href="#7-阅读全文" class="headerlink" title="7. 阅读全文"></a>7. 阅读全文</h3><p>两种方法：</p>
+<p>1 打开主题配置文件_config.yml，ctrl + F搜索找到”auto_excerpt”，改为true</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<p>2 在post每篇文章使用<code>&lt; !--more--&gt;</code> 手动进行截断</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530005950.png" alt=""></p>
+<h3 id="8-上传头像-并设置头像旋转效果"><a href="#8-上传头像-并设置头像旋转效果" class="headerlink" title="8. 上传头像,并设置头像旋转效果"></a>8. 上传头像,并设置头像旋转效果</h3><p>设置头像:<br>打开<code>themes/next/_config.yml</code>找到<code>avatar: /images/avatar.gif</code>;<br>其中<code>images</code>文件在<code>themes/next\source\</code>中,将你的头像图片放到images中,一般默认<br>命名为avatar,记得改下后缀就可以了.<br>设置旋转效果:<br>打开<code>themes\next\source\css\_common\components\sidebar\sidebar-author.styl</code>,<br>全部替换为下列代码</p>
+<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.site-author-image</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="variable">$site</span>-author-image-padding;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="variable">$site</span>-author-image-width;</span><br><span class="line">  <span class="attribute">height</span>: <span class="variable">$site</span>-author-image-height;</span><br><span class="line">  <span class="attribute">border</span>: <span class="variable">$site</span>-author-image-border-width solid <span class="variable">$site</span>-author-image-border-color;</span><br><span class="line"></span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  -webkit-<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  -moz-<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-author-image</span>:hover &#123;</span><br><span class="line">    -webkit-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -moz-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -ms-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-author-name</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="variable">$site</span>-author-name-margin;</span><br><span class="line">  <span class="attribute">text-align</span>: <span class="variable">$site</span>-author-name-align;</span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$site</span>-author-name-color;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="variable">$site</span>-author-name-weight;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-description</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="variable">$site</span>-description-margin-top;</span><br><span class="line">  <span class="attribute">text-align</span>: <span class="variable">$site</span>-description-align;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$site</span>-description-font-size;</span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$site</span>-description-color;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="9-分类和标签设置"><a href="#9-分类和标签设置" class="headerlink" title="9. 分类和标签设置"></a>9. 分类和标签设置</h3><h4 id="1、创建“分类”选项"><a href="#1、创建“分类”选项" class="headerlink" title="1、创建“分类”选项"></a>1、创建“分类”选项</h4><h5 id="1-1-生成“分类”页并添加tpye属性"><a href="#1-1-生成“分类”页并添加tpye属性" class="headerlink" title="1.1 生成“分类”页并添加tpye属性"></a>1.1 生成“分类”页并添加tpye属性</h5><p>打开命令行，进入博客所在文件夹。执行命令</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> page categories</span><br></pre></td></tr></table></figure>
+
+<p>根据上面的路径，找到<code>index.md</code>这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 文章分类</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-27</span> 13<span class="selector-pseudo">:47</span><span class="selector-pseudo">:40</span></span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+<p>添加<code>type: &quot;categories&quot;</code>到内容中，添加后是这样的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-2-给文章添加“categories”属性"><a href="#1-2-给文章添加“categories”属性" class="headerlink" title="1.2 给文章添加“categories”属性"></a>1.2 给文章添加“categories”属性</h5><p>打开需要添加分类的文章，在为其添加categories属性。下方的<code>categories: web前端</code>表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
+<p>用<code>---</code>创建前页，title和date没写就按默认的</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530020244.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 阿里云图床</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-26</span> 12<span class="selector-pseudo">:12</span><span class="selector-pseudo">:57</span></span><br><span class="line"><span class="selector-tag">categories</span>: </span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">web</span>前端</span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了<code>categories: xxx</code>的文章才会被收录到首页的“分类”中。</p>
+<h4 id="2、创建“标签”选项"><a href="#2、创建“标签”选项" class="headerlink" title="2、创建“标签”选项"></a>2、创建“标签”选项</h4><h4 id="2-1-生成“标签”页并添加tpye属性"><a href="#2-1-生成“标签”页并添加tpye属性" class="headerlink" title="2.1 生成“标签”页并添加tpye属性"></a>2.1 生成“标签”页并添加tpye属性</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> page tags</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">--</span></span><br><span class="line"><span class="selector-tag">title</span>: 标签</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-27</span> 14<span class="selector-pseudo">:22</span><span class="selector-pseudo">:08</span></span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+<p>添加<code>type: &quot;tags&quot;</code>到内容中，添加后是这样的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-给文章添加“tags”属性"><a href="#2-2-给文章添加“tags”属性" class="headerlink" title="2.2 给文章添加“tags”属性"></a>2.2 给文章添加“tags”属性</h4><p>打开需要添加标签的文章，为其添加tags属性。下方的<code>tags:</code>下方的<code>- jQuery</code> <code>- 表格</code> <code>- 表单验证</code>就是这篇文章的标签了</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: <span class="selector-tag">jQuery</span>对表单的操作及更多应用</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-26</span> 12<span class="selector-pseudo">:12</span><span class="selector-pseudo">:57</span></span><br><span class="line"><span class="selector-tag">categories</span>: </span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">web</span>前端</span><br><span class="line"><span class="selector-tag">tags</span>:</span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">jQuery</span></span><br><span class="line"><span class="selector-tag">-</span> 表格</span><br><span class="line"><span class="selector-tag">-</span> 表单验证</span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="10-标签和分类界面不需要评论"><a href="#10-标签和分类界面不需要评论" class="headerlink" title="10.标签和分类界面不需要评论"></a>10.标签和分类界面不需要评论</h3><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530112608.png" alt=""></p>
+<p>在tags/about 等的<code>index.md</code>文件加入<code>comments:false</code></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530115511.png" alt=""></p>
+<h3 id="11-联系我"><a href="#11-联系我" class="headerlink" title="11.联系我"></a>11.联系我</h3><h3 id="12-调整页面宽度xxx"><a href="#12-调整页面宽度xxx" class="headerlink" title="12.调整页面宽度xxx"></a>12.调整页面宽度xxx</h3><h3 id="13-搜索功能"><a href="#13-搜索功能" class="headerlink" title="13.搜索功能"></a>13.搜索功能</h3><p>先安装插件：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>之后先在站点配置里末尾增加以下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">	path: search.xml </span><br><span class="line">	field: post </span><br><span class="line">	format: html </span><br><span class="line">	limit: 10000</span><br></pre></td></tr></table></figure>
+
+<p>再在主题配置文件里搜索找到 local_search修改为如下：修改为true</p>
+<p>预览：</p>
+<p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-5-30 22-19-52.gif)</p>
+<h3 id="14-给代码块添加复制功能-代码高亮"><a href="#14-给代码块添加复制功能-代码高亮" class="headerlink" title="14.给代码块添加复制功能/代码高亮"></a>14.给代码块添加复制功能/代码高亮</h3><p>下载 clipboard.js</p>
+<p>三方插件 clipboardjs ，相关介绍和兼容性我就不赘述了，去它<a href="https://clipboardjs.com/" target="_blank" rel="noopener">主页</a>或<a href="https://github.com/zenorocha/clipboard.js" target="_blank" rel="noopener">github</a>上看。</p>
+<p><strong>下载地址：</strong></p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.js" target="_blank" rel="noopener">clipboard.js</a></li>
+<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.min.js" target="_blank" rel="noopener">clipboard.min.js</a> <strong>推荐</strong></li>
+</ul>
+<p>保存文件<code>clipboard.js / clipboard.min.js</code> ，目录如下：<br><code>.\themes\next\source\js\src</code></p>
+<p>clipboardjs 使用</p>
+<p>也是在<code>.\themes\next\source\js\src</code>目录下，创建<code>clipboard-use.js</code>，文件内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*页面载入完成后，创建复制按钮*&#x2F;  !function (e, t, a) &#123;     &#x2F;* code *&#x2F;    var initCopyCode &#x3D; function()&#123;      var copyHtml &#x3D; &#39;&#39;;      copyHtml +&#x3D; &#39;&lt;button class&#x3D;&quot;btn-copy&quot; data-clipboard-snippet&#x3D;&quot;&quot;&gt;&#39;;      &#x2F;&#x2F;fa fa-globe可以去字体库替换自己想要的图标copyHtml +&#x3D; &#39;  &lt;i class&#x3D;&quot;fa fa-clipboard&quot;&gt;&lt;&#x2F;i&gt;&lt;span&gt;copy&lt;&#x2F;span&gt;&#39;;      copyHtml +&#x3D; &#39;&lt;&#x2F;button&gt;&#39;;      $(&quot;.highlight .code pre&quot;).before(copyHtml);      new ClipboardJS(&#39;.btn-copy&#39;, &#123;          target: function(trigger) &#123;              return trigger.nextElementSibling;          &#125;      &#125;);    &#125;    initCopyCode();  &#125;(window, document);</span><br></pre></td></tr></table></figure>
+
+<p>在<code>.\themes\next\source\css\_custom\custom.styl</code>样式文件中添加下面代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;代码块复制按钮.highlight&#123;  &#x2F;&#x2F;方便copy代码按钮（btn-copy）的定位  position: relative;&#125;.btn-copy &#123;    display: inline-block;    cursor: pointer;    background-color: #eee;    background-image: linear-gradient(#fcfcfc,#eee);    border: 1px solid #d5d5d5;    border-radius: 3px;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;    -webkit-appearance: none;    font-size: 13px;    font-weight: 700;    line-height: 20px;    color: #333;    -webkit-transition: opacity .3s ease-in-out;    -o-transition: opacity .3s ease-in-out;    transition: opacity .3s ease-in-out;    padding: 2px 6px;    position: absolute;    right: 5px;    top: 5px;    opacity: 0;&#125;.btn-copy span &#123;    margin-left: 5px;&#125;.highlight:hover .btn-copy&#123;  opacity: 1;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>引用</p>
+<p>在<code>.\themes\next\layout\_layout.swig</code>文件中，添加引用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 代码块复制功能 --&gt;&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;src&#x2F;clipboard.min.js&quot;&gt;&lt;&#x2F;script&gt;  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;src&#x2F;clipboard-use.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>设置完这个copy比较丑，而且在左上角，需要调整一下</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530212129.png" alt=""></p>
+<h3 id="16-打赏"><a href="#16-打赏" class="headerlink" title="16.打赏"></a>16.打赏</h3><h3 id="修改打赏字体不闪动xxx"><a href="#修改打赏字体不闪动xxx" class="headerlink" title="修改打赏字体不闪动xxx"></a>修改打赏字体不闪动xxx</h3><p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-5-30 18-10-54.gif)</p>
+<p>修改文件 <code>next/source/css/_common/components/post/post-reward.styl</code>，然后注释其中的函数 <code>wechat:hover</code> 和 <code>alipay:hover</code> ，如下：</p>
+<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line">* 注释文字闪动函数</span><br><span class="line"> <span class="selector-id">#wechat</span>:hover p&#123;</span><br><span class="line">    <span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -webkit-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -moz-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line"> <span class="selector-id">#alipay</span>:hover p&#123;</span><br><span class="line">   <span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -webkit-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -moz-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="16-侧边栏设置"><a href="#16-侧边栏设置" class="headerlink" title="16.侧边栏设置"></a>16.侧边栏设置</h3><h3 id="17-设置文章更新时间，不仅仅有发表时间"><a href="#17-设置文章更新时间，不仅仅有发表时间" class="headerlink" title="17.设置文章更新时间，不仅仅有发表时间"></a>17.设置文章更新时间，不仅仅有发表时间</h3><h3 id="18-修改主题页面布局为圆角"><a href="#18-修改主题页面布局为圆角" class="headerlink" title="18.修改主题页面布局为圆角"></a>18.修改主题页面布局为圆角</h3><p>修改主题页面为圆角，有两种方法：</p>
+<p>第一种：</p>
+<p>打开文件，路径：/themes/next/source/css/_variables/custom.styl，粘贴如下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">// Variables of Gemini scheme</span><br><span class="line">// =================================================</span><br><span class="line">@import "Pisces.styl";</span><br><span class="line">// Settings for some of the most global styles.</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">$body-bg-color                   = #eee</span><br><span class="line">// Borders.</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">$box-shadow-inner                 = 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12)</span><br><span class="line">$box-shadow                       = 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12), 0 -1px .5px 0 rgba(0,0,0,.09)</span><br><span class="line">$border-radius-inner             = initial</span><br><span class="line">$border-radius                   = initial</span><br><span class="line">$border-radius-inner           = 15px 15px 15px 15px;</span><br><span class="line">$border-radius                 = 15px;</span><br></pre></td></tr></table></figure>
+
+<p>第二种：</p>
+<p>打开文件，路径：\themes\next\source\css_variables\Gemini.styl ，添加以下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">border-radius-inner = 15px 15px 15px 15px;</span><br><span class="line">border-radius = 15px;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="19-去掉顶部黑线"><a href="#19-去掉顶部黑线" class="headerlink" title="19.去掉顶部黑线"></a>19.去掉顶部黑线</h3><p>打开文件，路径：themes\next\source\css_custom\custom.styl ，添加以下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">//去掉顶部黑线：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="20-修改文章底部-为图标"><a href="#20-修改文章底部-为图标" class="headerlink" title="20.修改文章底部#为图标"></a>20.修改文章底部#为图标</h3><p>我们正常写的文章，如果有标签的话会在文章末尾出现标签。像这样：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530135426.png" alt=""></p>
+<p><code>#</code>不好看，把它换为图标</p>
+<p>打开文件，路径：/themes/next/layout/_macro/post.swig 搜索找到 rel=”tag”&gt;#   把#替换为如下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-tag"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1590818251278.png" alt="1590818251278"></p>
+<h3 id="21-去掉文章中图片默认的边框xxx"><a href="#21-去掉文章中图片默认的边框xxx" class="headerlink" title="21.去掉文章中图片默认的边框xxx"></a>21.去掉文章中图片默认的边框xxx</h3><p>打开文件，</p>
+<p>/themes/next/source/css/_common/components/post/post-expand.styl，找到img，把border修改为none</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530144721.png" alt=""></p>
+<h3 id="22-更改上一篇，下一篇的顺序"><a href="#22-更改上一篇，下一篇的顺序" class="headerlink" title="22.更改上一篇，下一篇的顺序"></a>22.更改上一篇，下一篇的顺序</h3><p>进入一篇文章，在文章底部，有上下篇的链接（&lt; &gt;），但是点 &gt; 发现进入的是页面中的的上面那篇文章，与操作习惯不符，别扭。</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;!-- 文件位置：~/blog/themes/next/layout/_macro/post.swig --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>把后面五个next改为prev，prev改为next</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530175739.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>小妙招</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>阿里云图床</title>
+    <url>/2020/04/26/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
+<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
+<p><img src="" alt="">   ctrl+shift+i</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
+<ol>
+<li>用自己的域名访问，也就是需要cname</li>
+<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
+</ol>
+<a id="more"></a>
+
+<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
+<ol>
+<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
+<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
+</ol>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
+<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
+<p>简言之，需要备案&gt;&gt;购买服务器</p>
+]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>图床</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>trojan教程</title>
     <url>/2020/04/24/trojan%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<ul>
@@ -181,35 +420,6 @@
       </tags>
   </entry>
   <entry>
-    <title>阿里云图床</title>
-    <url>/2020/04/26/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
-<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
-<p><img src="" alt="">   ctrl+shift+i</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
-<ol>
-<li>用自己的域名访问，也就是需要cname</li>
-<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
-</ol>
-<a id="more"></a>
-
-<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
-<ol>
-<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
-<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
-</ol>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
-<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
-<p>简言之，需要备案&gt;&gt;购买服务器</p>
-]]></content>
-      <categories>
-        <category>搭建博客</category>
-      </categories>
-      <tags>
-        <tag>图床</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搭建个人博客</title>
     <url>/2020/03/23/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>估计要注册一个新的github账号对应一个新的域名博客</p>
@@ -319,215 +529,5 @@
       <categories>
         <category>搭建博客</category>
       </categories>
-  </entry>
-  <entry>
-    <title>hexo博客优化</title>
-    <url>/2020/05/30/hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<p>hexo下文章的排版如何优化：宽度，字体，图片大小</p>
-<p>图片太大</p>
-<p>自定义url，默认的是<code>/发表日期/标题</code></p>
-<p>加载太慢了&gt;&gt;&gt;第三方cdn加速</p>
-<p>更新了文章，发表时间也没更新</p>
-<p>升级hexo主题</p>
-<a id="more"></a>
-
-<p>第三方工具：</p>
-<p>搜狐的畅言开放评论</p>
-<p><a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>阅读次数</p>
-<h3 id="1-设置标签、分类的界面"><a href="#1-设置标签、分类的界面" class="headerlink" title="1.设置标签、分类的界面"></a>1.设置标签、分类的界面</h3><p>设置菜单那里，我设置了显示标签、分类、关于几个选项。但是点击进去，却报错：404</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529095825.png" alt=""></p>
-<p>只需要在source 目录下创建文件即可</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">hexo new page 'about'(tags/categories)</span><br></pre></td></tr></table></figure>
-
-<p>有时候在vscode终端/powershell 创建报错，需要用git bash创建</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529095402.png" alt=""></p>
-<p>修改这tags和categories文件夹中的index.md文件，新增type属性，如下：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529100522.png" alt=""></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2020-05-29 09:51:59</span><br><span class="line">type: tags</span><br></pre></td></tr></table></figure>
-
-<p>修改好，还是报404，url出现 <code>%20</code>，空格的意思<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529103304.png" alt=""></p>
-<p>theme下面的配置文件，<code>||</code>之前出现了空格，删除空格即可</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529102210.png" alt=""></p>
-<h3 id="2-实现点击出现桃心效果"><a href="#2-实现点击出现桃心效果" class="headerlink" title="2. 实现点击出现桃心效果"></a>2. 实现点击出现桃心效果</h3><p>在themes/hexo-theme-next/source/js/src下新建文件 clicklove.js ，接着把该链接下的代码拷贝粘贴到 clicklove.js 文件中。<br>代码如下：</p>
-<ol start="4">
-<li><pre><code class="js">!<span class="function"><span class="keyword">function</span>(<span class="params">e,t,a</span>)</span>{<span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>)</span>{c(<span class="string">".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"</span>),o(),r()}<span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>)</span>{<span class="keyword">for</span>(<span class="keyword">var</span> e=<span class="number">0</span>;e&lt;d.length;e++)d[e].alpha&lt;=<span class="number">0</span>?(t.body.removeChild(d[e].el),d.splice(e,<span class="number">1</span>)):(d[e].y--,d[e].scale+=<span class="number">.004</span>,d[e].alpha-=<span class="number">.013</span>,d[e].el.style.cssText=<span class="string">"left:"</span>+d[e].x+<span class="string">"px;top:"</span>+d[e].y+<span class="string">"px;opacity:"</span>+d[e].alpha+<span class="string">";transform:scale("</span>+d[e].scale+<span class="string">","</span>+d[e].scale+<span class="string">") rotate(45deg);background:"</span>+d[e].color+<span class="string">";z-index:99999"</span>);requestAnimationFrame(r)}<span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params"></span>)</span>{<span class="keyword">var</span> t=<span class="string">"function"</span>==<span class="keyword">typeof</span> e.onclick&amp;&amp;e.onclick;e.onclick=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{t&amp;&amp;t(),i(e)}}<span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>)</span>{<span class="keyword">var</span> a=t.createElement(<span class="string">"div"</span>);a.className=<span class="string">"heart"</span>,d.push({<span class="attr">el</span>:a,<span class="attr">x</span>:e.clientX<span class="number">-5</span>,<span class="attr">y</span>:e.clientY<span class="number">-5</span>,<span class="attr">scale</span>:<span class="number">1</span>,<span class="attr">alpha</span>:<span class="number">1</span>,<span class="attr">color</span>:s()}),t.body.appendChild(a)}<span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params">e</span>)</span>{<span class="keyword">var</span> a=t.createElement(<span class="string">"style"</span>);a.type=<span class="string">"text/css"</span>;<span class="keyword">try</span>{a.appendChild(t.createTextNode(e))}<span class="keyword">catch</span>(t){a.styleSheet.cssText=e}t.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(a)}<span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>)</span>{<span class="keyword">return</span><span class="string">"rgb("</span>+(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">","</span>+(<span class="number">255</span><span class="built_in">Math</span>.random())+<span class="string">","</span>+~~(<span class="number">255</span><span class="built_in">Math</span>.random())+<span class="string">")"</span>}<span class="keyword">var</span> d=[];e.requestAnimationFrame=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{<span class="keyword">return</span> e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{setTimeout(e,<span class="number">1e3</span>/<span class="number">60</span>)}}(),n()}(<span class="built_in">window</span>,<span class="built_in">document</span>);
-&lt;!--￼<span class="number">2</span>--&gt;
-
-
-</code></pre>
-</li>
-</ol>
-<h3 id="3-设置网站的图标Favicon"><a href="#3-设置网站的图标Favicon" class="headerlink" title="3. 设置网站的图标Favicon"></a>3. 设置网站的图标Favicon</h3><p>在<a href="http://www.easyicon.net/" target="_blank" rel="noopener">EasyIcon</a>中找一张（32*32）的<code>ico</code>图标,或者去别的网站下载或者制作，并将图标名称改为<code>favicon.ico</code>，然后把图标放在<code>/themes/hexo-theme-next/source/images</code>里，并且修改主题配置文件：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-pig.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-pig.png</span></span><br></pre></td></tr></table></figure>
-
-<p>只需要把images目录下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">favicon-16x16-next.png文件和</span><br><span class="line">favicon-32x32-next.png文件替换成自己喜欢的就可以了</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="4-添加顶部加载条"><a href="#4-添加顶部加载条" class="headerlink" title="4. 添加顶部加载条"></a>4. 添加顶部加载条</h3><h3 id="5-阅读次数-热度"><a href="#5-阅读次数-热度" class="headerlink" title="5.阅读次数/热度"></a>5.阅读次数/热度</h3><p>使用<a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>实现，enable属性改为<code>true</code></p>
-<p>“阅读次数”这些字也可以改</p>
-<p>next主题集成leanCloud，打开\blog-generator\themes\hexo-theme-next/layout/_macro/post.swig,在画红线的区域添加℃。</p>
-<p>然后打开，<code>\blog-generator\themes\hexo-theme-next/languages/zh-Hans.yml</code>,将画红框的改为热度就可以了</p>
-<p>创建应用：控制台 -&gt; 创建应用（开发版）<br>应用名称可以随意输入，后面还可以修改，我用的是 test；<br>创建 Class：点击刚创建的 test 应用，创建一个 Class 表用来保存我们的博客访问数据。<br>此处创建的 Class 名字必须为 Counter，用来保证与 NexT 主题的修改相兼容；<br>ACL 权限选择 无限制，避免后续因为权限的问题导致次数统计显示不正常</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529140833.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529141647.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529142527.png" alt=""></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">leancloud_visitors:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="string">xxx(leancloud</span> <span class="string">上面的</span> <span class="string">AppID)</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="string">xxx(leancloud</span> <span class="string">上面的</span> <span class="string">AppKey)</span></span><br></pre></td></tr></table></figure>
-
-<p><code>进文章详情可以看到阅读次数</code></p>
-<h3 id="6-评论功能（valine）"><a href="#6-评论功能（valine）" class="headerlink" title="6.评论功能（valine）"></a>6.评论功能（valine）</h3><p>也用到<a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>，用同一个appid和appkey。而且只用创建一个Class，当你开启了valine，自动加载了一个<code>Comment</code> 的Class</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530005045.png" alt=""></p>
-<h3 id="7-阅读全文"><a href="#7-阅读全文" class="headerlink" title="7. 阅读全文"></a>7. 阅读全文</h3><p>两种方法：</p>
-<p>1 打开主题配置文件_config.yml，ctrl + F搜索找到”auto_excerpt”，改为true</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
-
-<p>2 在post每篇文章使用<code>&lt; !--more--&gt;</code> 手动进行截断</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530005950.png" alt=""></p>
-<h3 id="8-上传头像-并设置头像旋转效果"><a href="#8-上传头像-并设置头像旋转效果" class="headerlink" title="8. 上传头像,并设置头像旋转效果"></a>8. 上传头像,并设置头像旋转效果</h3><p>设置头像:<br>打开<code>themes/next/_config.yml</code>找到<code>avatar: /images/avatar.gif</code>;<br>其中<code>images</code>文件在<code>themes/next\source\</code>中,将你的头像图片放到images中,一般默认<br>命名为avatar,记得改下后缀就可以了.<br>设置旋转效果:<br>打开<code>themes\next\source\css\_common\components\sidebar\sidebar-author.styl</code>,<br>全部替换为下列代码</p>
-<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.site-author-image</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="variable">$site</span>-author-image-padding;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="variable">$site</span>-author-image-width;</span><br><span class="line">  <span class="attribute">height</span>: <span class="variable">$site</span>-author-image-height;</span><br><span class="line">  <span class="attribute">border</span>: <span class="variable">$site</span>-author-image-border-width solid <span class="variable">$site</span>-author-image-border-color;</span><br><span class="line"></span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  -webkit-<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  -moz-<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-author-image</span>:hover &#123;</span><br><span class="line">    -webkit-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -moz-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -ms-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-author-name</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="variable">$site</span>-author-name-margin;</span><br><span class="line">  <span class="attribute">text-align</span>: <span class="variable">$site</span>-author-name-align;</span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$site</span>-author-name-color;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="variable">$site</span>-author-name-weight;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-description</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="variable">$site</span>-description-margin-top;</span><br><span class="line">  <span class="attribute">text-align</span>: <span class="variable">$site</span>-description-align;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$site</span>-description-font-size;</span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$site</span>-description-color;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="9-分类和标签设置"><a href="#9-分类和标签设置" class="headerlink" title="9. 分类和标签设置"></a>9. 分类和标签设置</h3><h4 id="1、创建“分类”选项"><a href="#1、创建“分类”选项" class="headerlink" title="1、创建“分类”选项"></a>1、创建“分类”选项</h4><h5 id="1-1-生成“分类”页并添加tpye属性"><a href="#1-1-生成“分类”页并添加tpye属性" class="headerlink" title="1.1 生成“分类”页并添加tpye属性"></a>1.1 生成“分类”页并添加tpye属性</h5><p>打开命令行，进入博客所在文件夹。执行命令</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> page categories</span><br></pre></td></tr></table></figure>
-
-<p>根据上面的路径，找到<code>index.md</code>这个文件，打开后默认内容是这样的：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 文章分类</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-27</span> 13<span class="selector-pseudo">:47</span><span class="selector-pseudo">:40</span></span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
-
-<p>添加<code>type: &quot;categories&quot;</code>到内容中，添加后是这样的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h5 id="1-2-给文章添加“categories”属性"><a href="#1-2-给文章添加“categories”属性" class="headerlink" title="1.2 给文章添加“categories”属性"></a>1.2 给文章添加“categories”属性</h5><p>打开需要添加分类的文章，在为其添加categories属性。下方的<code>categories: web前端</code>表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
-<p>用<code>---</code>创建前页，title和date没写就按默认的</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530020244.png" alt=""></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 阿里云图床</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-26</span> 12<span class="selector-pseudo">:12</span><span class="selector-pseudo">:57</span></span><br><span class="line"><span class="selector-tag">categories</span>: </span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">web</span>前端</span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
-
-<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了<code>categories: xxx</code>的文章才会被收录到首页的“分类”中。</p>
-<h4 id="2、创建“标签”选项"><a href="#2、创建“标签”选项" class="headerlink" title="2、创建“标签”选项"></a>2、创建“标签”选项</h4><h4 id="2-1-生成“标签”页并添加tpye属性"><a href="#2-1-生成“标签”页并添加tpye属性" class="headerlink" title="2.1 生成“标签”页并添加tpye属性"></a>2.1 生成“标签”页并添加tpye属性</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> page tags</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">--</span></span><br><span class="line"><span class="selector-tag">title</span>: 标签</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-27</span> 14<span class="selector-pseudo">:22</span><span class="selector-pseudo">:08</span></span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
-
-<p>添加<code>type: &quot;tags&quot;</code>到内容中，添加后是这样的：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-2-给文章添加“tags”属性"><a href="#2-2-给文章添加“tags”属性" class="headerlink" title="2.2 给文章添加“tags”属性"></a>2.2 给文章添加“tags”属性</h4><p>打开需要添加标签的文章，为其添加tags属性。下方的<code>tags:</code>下方的<code>- jQuery</code> <code>- 表格</code> <code>- 表单验证</code>就是这篇文章的标签了</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: <span class="selector-tag">jQuery</span>对表单的操作及更多应用</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-26</span> 12<span class="selector-pseudo">:12</span><span class="selector-pseudo">:57</span></span><br><span class="line"><span class="selector-tag">categories</span>: </span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">web</span>前端</span><br><span class="line"><span class="selector-tag">tags</span>:</span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">jQuery</span></span><br><span class="line"><span class="selector-tag">-</span> 表格</span><br><span class="line"><span class="selector-tag">-</span> 表单验证</span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="10-标签和分类界面不需要评论"><a href="#10-标签和分类界面不需要评论" class="headerlink" title="10.标签和分类界面不需要评论"></a>10.标签和分类界面不需要评论</h3><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530112608.png" alt=""></p>
-<p>在tags/about 等的<code>index.md</code>文件加入<code>comments:false</code></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530115511.png" alt=""></p>
-<h3 id="11-联系我"><a href="#11-联系我" class="headerlink" title="11.联系我"></a>11.联系我</h3><h3 id="12-调整页面宽度xxx"><a href="#12-调整页面宽度xxx" class="headerlink" title="12.调整页面宽度xxx"></a>12.调整页面宽度xxx</h3><h3 id="13-搜索功能"><a href="#13-搜索功能" class="headerlink" title="13.搜索功能"></a>13.搜索功能</h3><p>先安装插件：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-
-<p>之后先在站点配置里末尾增加以下代码：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">	path: search.xml </span><br><span class="line">	field: post </span><br><span class="line">	format: html </span><br><span class="line">	limit: 10000</span><br></pre></td></tr></table></figure>
-
-<p>再在主题配置文件里搜索找到 local_search修改为如下：修改为true</p>
-<p>预览：</p>
-<p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-5-30 22-19-52.gif)</p>
-<h3 id="14-给代码块添加复制功能-代码高亮"><a href="#14-给代码块添加复制功能-代码高亮" class="headerlink" title="14.给代码块添加复制功能/代码高亮"></a>14.给代码块添加复制功能/代码高亮</h3><p>下载 clipboard.js</p>
-<p>三方插件 clipboardjs ，相关介绍和兼容性我就不赘述了，去它<a href="https://clipboardjs.com/" target="_blank" rel="noopener">主页</a>或<a href="https://github.com/zenorocha/clipboard.js" target="_blank" rel="noopener">github</a>上看。</p>
-<p><strong>下载地址：</strong></p>
-<ul>
-<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.js" target="_blank" rel="noopener">clipboard.js</a></li>
-<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.min.js" target="_blank" rel="noopener">clipboard.min.js</a> <strong>推荐</strong></li>
-</ul>
-<p>保存文件<code>clipboard.js / clipboard.min.js</code> ，目录如下：<br><code>.\themes\next\source\js\src</code></p>
-<p>clipboardjs 使用</p>
-<p>也是在<code>.\themes\next\source\js\src</code>目录下，创建<code>clipboard-use.js</code>，文件内容如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*页面载入完成后，创建复制按钮*&#x2F;  !function (e, t, a) &#123;     &#x2F;* code *&#x2F;    var initCopyCode &#x3D; function()&#123;      var copyHtml &#x3D; &#39;&#39;;      copyHtml +&#x3D; &#39;&lt;button class&#x3D;&quot;btn-copy&quot; data-clipboard-snippet&#x3D;&quot;&quot;&gt;&#39;;      &#x2F;&#x2F;fa fa-globe可以去字体库替换自己想要的图标copyHtml +&#x3D; &#39;  &lt;i class&#x3D;&quot;fa fa-clipboard&quot;&gt;&lt;&#x2F;i&gt;&lt;span&gt;copy&lt;&#x2F;span&gt;&#39;;      copyHtml +&#x3D; &#39;&lt;&#x2F;button&gt;&#39;;      $(&quot;.highlight .code pre&quot;).before(copyHtml);      new ClipboardJS(&#39;.btn-copy&#39;, &#123;          target: function(trigger) &#123;              return trigger.nextElementSibling;          &#125;      &#125;);    &#125;    initCopyCode();  &#125;(window, document);</span><br></pre></td></tr></table></figure>
-
-<p>在<code>.\themes\next\source\css\_custom\custom.styl</code>样式文件中添加下面代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;代码块复制按钮.highlight&#123;  &#x2F;&#x2F;方便copy代码按钮（btn-copy）的定位  position: relative;&#125;.btn-copy &#123;    display: inline-block;    cursor: pointer;    background-color: #eee;    background-image: linear-gradient(#fcfcfc,#eee);    border: 1px solid #d5d5d5;    border-radius: 3px;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;    -webkit-appearance: none;    font-size: 13px;    font-weight: 700;    line-height: 20px;    color: #333;    -webkit-transition: opacity .3s ease-in-out;    -o-transition: opacity .3s ease-in-out;    transition: opacity .3s ease-in-out;    padding: 2px 6px;    position: absolute;    right: 5px;    top: 5px;    opacity: 0;&#125;.btn-copy span &#123;    margin-left: 5px;&#125;.highlight:hover .btn-copy&#123;  opacity: 1;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>引用</p>
-<p>在<code>.\themes\next\layout\_layout.swig</code>文件中，添加引用</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 代码块复制功能 --&gt;&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;src&#x2F;clipboard.min.js&quot;&gt;&lt;&#x2F;script&gt;  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;src&#x2F;clipboard-use.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
-
-<p>设置完这个copy比较丑，而且在左上角，需要调整一下</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530212129.png" alt=""></p>
-<h3 id="16-打赏"><a href="#16-打赏" class="headerlink" title="16.打赏"></a>16.打赏</h3><h3 id="修改打赏字体不闪动xxx"><a href="#修改打赏字体不闪动xxx" class="headerlink" title="修改打赏字体不闪动xxx"></a>修改打赏字体不闪动xxx</h3><p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-5-30 18-10-54.gif)</p>
-<p>修改文件 <code>next/source/css/_common/components/post/post-reward.styl</code>，然后注释其中的函数 <code>wechat:hover</code> 和 <code>alipay:hover</code> ，如下：</p>
-<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line">* 注释文字闪动函数</span><br><span class="line"> <span class="selector-id">#wechat</span>:hover p&#123;</span><br><span class="line">    <span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -webkit-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -moz-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line"> <span class="selector-id">#alipay</span>:hover p&#123;</span><br><span class="line">   <span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -webkit-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -moz-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="16-侧边栏设置"><a href="#16-侧边栏设置" class="headerlink" title="16.侧边栏设置"></a>16.侧边栏设置</h3><h3 id="17-设置文章更新时间，不仅仅有发表时间"><a href="#17-设置文章更新时间，不仅仅有发表时间" class="headerlink" title="17.设置文章更新时间，不仅仅有发表时间"></a>17.设置文章更新时间，不仅仅有发表时间</h3><h3 id="18-修改主题页面布局为圆角"><a href="#18-修改主题页面布局为圆角" class="headerlink" title="18.修改主题页面布局为圆角"></a>18.修改主题页面布局为圆角</h3><p>修改主题页面为圆角，有两种方法：</p>
-<p>第一种：</p>
-<p>打开文件，路径：/themes/next/source/css/_variables/custom.styl，粘贴如下代码：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">// Variables of Gemini scheme</span><br><span class="line">// =================================================</span><br><span class="line">@import "Pisces.styl";</span><br><span class="line">// Settings for some of the most global styles.</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">$body-bg-color                   = #eee</span><br><span class="line">// Borders.</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">$box-shadow-inner                 = 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12)</span><br><span class="line">$box-shadow                       = 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12), 0 -1px .5px 0 rgba(0,0,0,.09)</span><br><span class="line">$border-radius-inner             = initial</span><br><span class="line">$border-radius                   = initial</span><br><span class="line">$border-radius-inner           = 15px 15px 15px 15px;</span><br><span class="line">$border-radius                 = 15px;</span><br></pre></td></tr></table></figure>
-
-<p>第二种：</p>
-<p>打开文件，路径：\themes\next\source\css_variables\Gemini.styl ，添加以下代码：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">border-radius-inner = 15px 15px 15px 15px;</span><br><span class="line">border-radius = 15px;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="19-去掉顶部黑线"><a href="#19-去掉顶部黑线" class="headerlink" title="19.去掉顶部黑线"></a>19.去掉顶部黑线</h3><p>打开文件，路径：themes\next\source\css_custom\custom.styl ，添加以下代码：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">//去掉顶部黑线：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="20-修改文章底部-为图标"><a href="#20-修改文章底部-为图标" class="headerlink" title="20.修改文章底部#为图标"></a>20.修改文章底部#为图标</h3><p>我们正常写的文章，如果有标签的话会在文章末尾出现标签。像这样：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530135426.png" alt=""></p>
-<p><code>#</code>不好看，把它换为图标</p>
-<p>打开文件，路径：/themes/next/layout/_macro/post.swig 搜索找到 rel=”tag”&gt;#   把#替换为如下代码：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-tag"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1590818251278.png" alt="1590818251278"></p>
-<h3 id="21-去掉文章中图片默认的边框xxx"><a href="#21-去掉文章中图片默认的边框xxx" class="headerlink" title="21.去掉文章中图片默认的边框xxx"></a>21.去掉文章中图片默认的边框xxx</h3><p>打开文件，</p>
-<p>/themes/next/source/css/_common/components/post/post-expand.styl，找到img，把border修改为none</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530144721.png" alt=""></p>
-<h3 id="22-更改上一篇，下一篇的顺序"><a href="#22-更改上一篇，下一篇的顺序" class="headerlink" title="22.更改上一篇，下一篇的顺序"></a>22.更改上一篇，下一篇的顺序</h3><p>进入一篇文章，在文章底部，有上下篇的链接（&lt; &gt;），但是点 &gt; 发现进入的是页面中的的上面那篇文章，与操作习惯不符，别扭。</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;!-- 文件位置：~/blog/themes/next/layout/_macro/post.swig --&gt;</span><br></pre></td></tr></table></figure>
-
-<p>把后面五个next改为prev，prev改为next</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530175739.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>小妙招</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>天猫618弹窗关闭</title>
-    <url>/2020/06/03/%E5%A4%A9%E7%8C%AB618%E5%BC%B9%E7%AA%97%E5%85%B3%E9%97%AD/</url>
-    <content><![CDATA[<p>临近电商大促，这些弹窗就多了起来。我已经很久没看到广告弹窗了，因为用了火绒来拦截弹窗，效果还不错。这是一个天猫活动弹窗，火绒居然没有拦截。还好这个弹窗没那么流氓，是直接按退出就真是退出了，不会跳转到浏览器打开网页。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%B9%E7%AA%97.gif" alt=""></p>
-<a id="more"></a>
-
-<p>1.基本方法</p>
-<p>天猫618弹窗时先不要关掉，按Ctrl+Alt+Delete,打开资源管理器，能看到弹窗进程：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210618.png" alt=""></p>
-<p>右键，点开属性，可以看到安装位置：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210814.png" alt=""></p>
-<p>居然是搜狗输入法的弹窗，吃香很难看啊。打开<code>SogouInput\9.3.0.3129</code>目录，找到<code>ShowInfo.exe</code>，删除</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603211233.png" alt=""></p>
-<p>2.进阶方法</p>
-<p>如果上述方法无效，则尝试以下方法：</p>
-<p>Windows Defender 防火墙&gt;&gt;高级设置，然后配置入站规则。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604112915.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%A5%E7%AB%99%E8%A7%84%E5%88%99.gif" alt=""></p>
-<p>重启即可。</p>
-<p>3.如果上述方法都不行，只能出杀手锏了。</p>
-<p>创建一个TXT里面随便写东西，改成同样的文件名<code>ShowInfo.exe</code>，替换掉原版，修改属性为只读不可写入。因为不可写入所以输入法没法联网更新这个文件，而下载新文件也会由于重复名称失败。右键属性，常规只读，然后点安全，编辑，everyone,拒绝打勾。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130021.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130824.png" alt=""></p>
-<p>成功！</p>
-]]></content>
-      <categories>
-        <category>小妙招</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2020/06/04/test/</url>
-    <content><![CDATA[<blockquote>
-<p><font color="ff0000">版权声明：本文为原创，欢迎转载，转载请注明出处，勿用于商业用途！</font></p>
-</blockquote>
-<p>&emsp;&emsp;答自己：<br>想想自己的腿，如果明天<br>姑娘的腿，还没我的腿好看，还没我的细，还没我的白<br>走路的风姿也不够我风骚妖娆<br>我拜腿？我拜个屁！我看腿？我看个屁<br>我自己的更好看，更舒服，更白细<br>&emsp;&emsp;怀抱着这样的心态修炼？<br>CC德六字真言：真好，真细，真白<br>摸了摸自己的腿，指日可待<br>这个世界，自己好玩，更重要<br>&emsp;&emsp;自己的好玩比男女朋友好玩，更重要！<font color="ff0000"> ; </font></p>
-]]></content>
   </entry>
 </search>
