@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>trojan教程</title>
+    <url>/2020/04/24/trojan%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<ul>
+<li><a href="https://yizhihongxing.network/index.html#home" target="_blank" rel="noopener">一枝红杏</a></li>
+<li><a href="https://yizhihongxing.network/index.html#services" target="_blank" rel="noopener">服务优势</a></li>
+<li><a href="https://yizhihongxing.network/index.html#features" target="_blank" rel="noopener">产品特性</a></li>
+<li><a href="https://yizhihongxing.network/index.html#pricing" target="_blank" rel="noopener">价格</a></li>
+<li><a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=14" target="_blank" rel="noopener">客户中心</a></li>
+</ul>
+<p><a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&amp;id=14#" target="_blank" rel="noopener">https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&amp;id=14#</a>)</p>
+<h2 id="一、【Windows】【推荐】-Trojan-QT5-设置方法"><a href="#一、【Windows】【推荐】-Trojan-QT5-设置方法" class="headerlink" title="一、【Windows】【推荐】 Trojan-QT5 设置方法"></a>一、【Windows】【推荐】 Trojan-QT5 设置方法</h2><p><strong>本文导入配置文件适用于 V0.04a 以上客户端（帮助 &gt; 关于 查看客户端版本号）**</strong>目前客户端流量统计功能无法正常工作，显示用量 0 是正常的<strong>**教程对应的服务版本为： Trojan 服务</strong></p>
+<a id="more"></a>
+
+<h2 id="1-下载客户端"><a href="#1-下载客户端" class="headerlink" title="1. 下载客户端"></a>1. 下载客户端</h2><p>前往 技术支持 &gt; 资源下载 &gt; Trojan 进行下载： <a href="https://order.yizhihongxing.network/dl.php?type=d&id=19" target="_blank" rel="noopener">Trojan-QT5 Windows 客户端(点击下载)</a></p>
+<ul>
+<li>如出现 VCRUNTIME140.dll 和 MSVCP140.dll 缺失,需点击以下链接安装 Visual C++ redistributable packages for Visual Studio 2015, 2017 and 2019<br>x86: <a href="https://aka.ms/vs/16/release/vc_redist.x86.exe" target="_blank" rel="noopener">vc_redist.x86.exe</a><br>x64: <a href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank" rel="noopener">vc_redist.x64.exe</a></li>
+<li><strong>如果点击连接时时闪退/报错/没有反应，请确认没有其他程序占用客户端的监听端口，建议将其他代理客户端退出后试试</strong></li>
+</ul>
+<h2 id="2-查看节点信息"><a href="#2-查看节点信息" class="headerlink" title="2. 查看节点信息"></a>2. 查看节点信息</h2><p>登入到客户中心，依次访问 Services &gt; <a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">My Products &amp; Services</a><a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">( </a><a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">我的产品与服务 </a><a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">- 点击前往)</a> ，查看 Trojan 协议对应的 <code>Rose</code> 服务器信息。</p>
+<h2 id="3-添加节点"><a href="#3-添加节点" class="headerlink" title="3. 添加节点"></a>3. 添加节点</h2><p>添加方式支持<br>手动(3.1)<br>导入配置文件(3.2)  <strong>(&lt;-推荐)</strong><br>扫码(3.3)</p>
+<h3 id="3-1-手动添加"><a href="#3-1-手动添加" class="headerlink" title="3.1 手动添加"></a>3.1 手动添加</h3><p>推荐通过 <strong>导入配置文件(3.2部分)(可以一次性全部导入)</strong> / <strong>扫码(3.3部分)</strong>  的方式进行添加，本部分主要用于说明节点设置页面各选项的作用。</p>
+<p>打开客户端，点击 <code>连接</code> &gt; <code>添加</code> &gt; <code>手动(M)</code>，在弹出的窗口中按照如下的内容填写。</p>
+<p>红框部分为必须填写的内容，绿框部分可以根据情况进行修改，选项说明见图片底部。</p>
+<p><img src="https://i.loli.net/2020/03/09/DmPrIMWphQ9ixXR.png" alt="添加节点"></p>
+<ul>
+<li><code>配置名称</code> : 节点的备注名称，可以自由填写</li>
+<li><code>服务器地址</code>： 填写选用的服务器地址域名或是 IP</li>
+<li><code>服务器端口</code>： 我们 Trojan 服务的端口均为 443</li>
+<li><code>密钥</code>： 填写服务连接密码</li>
+<li><code>本地端口</code> / <code>本地HTTP端口</code>： SOCKS5 与 HTTP 的监听端口，一般保持默认即可，<strong>由于 Trojan / Shadowsocks 客户端默认端口一致，因此不要同时运行两个客户端，如有同时运行需求，请修改其中一个客户端的 Socks5 监听端口</strong></li>
+<li><code>本地服务类型</code>: 选择 <code>SOCKS5 + HTTP</code> 会在连接后提供 HTTP 协议的监听，否则仅监听 SOCKS 端口</li>
+<li><code>自动化</code>： 勾选后会在程序启动时自动连接该节点</li>
+</ul>
+<p>点击 OK 后完成添加。</p>
+<p>端口设置，请点击顶部菜单 <strong>设置 &gt; 高级设置</strong> 进行设置，下图为客户端的默认设置</p>
+<p><img src="https://i.loli.net/2020/02/29/7z3NXCJ94F1aPbc.png" alt="img"></p>
+<h3 id="3-2-导入配置文件"><a href="#3-2-导入配置文件" class="headerlink" title="3.2 导入配置文件"></a>3.2 导入配置文件</h3><p>打开服务详情页面，点击密码底部的 GUI-Config  Download 下载配置文件 <code>gui-config.json</code>。</p>
+<p><img src="https://i.loli.net/2020/03/09/aAorsN6xnhe5VtR.png" alt="img"></p>
+<p>然后点击客户端顶部的 <code>文件</code> &gt; <code>从 gui-config 导入连接(I)</code> ：</p>
+<p><img src="https://i.loli.net/2020/02/29/HFcdqJBKQye35iu.png" alt="导入配置文件"></p>
+<p>导入后选择一个节点再点击顶部的链接按钮进行使用，<strong>配置中提供的本地 SOCKS5 端口为 1080 与 Shaodowsocks 客户端默认端口一致，因此点击后如果没有反应请**</strong>确认没有其他已连接的节点或是其他程序占用了客户端的本地端口**。</p>
+<p>选中的节点双击可以打开编辑配置，选项说明请查看 3.1 部分。</p>
+<p> <img src="https://i.loli.net/2020/03/09/4ymiBfIb9cErkuH.png" alt="img"></p>
+<h3 id="3-3-扫描二维码添加"><a href="#3-3-扫描二维码添加" class="headerlink" title="3.3 扫描二维码添加"></a>3.3 扫描二维码添加</h3><p>打开服务详情页面，点击服务器信息最后一列的二维码图标显示二维码。</p>
+<p><img src="https://i.loli.net/2020/03/09/aAorsN6xnhe5VtR.png" alt="显示二维码"></p>
+<p>然后点击客户端顶部菜单的 <code>连接</code> &gt; <code>添加</code> &gt; <code>扫描屏幕上的二维码(S)</code></p>
+<p><img src="https://i.loli.net/2020/02/20/KTLePmyRSJOuExX.png" alt="二维码添加"></p>
+<p>参考手动设置部分的选项说明决定是否修改设置，点击 OK 后完成添加。</p>
+<p><img src="https://i.loli.net/2020/03/09/DmPrIMWphQ9ixXR.png" alt="添加节点"></p>
+<p>3.3.1 粘贴 URI 添加</p>
+<p>点击客户端顶部菜单的 <code>连接</code> &gt; <code>添加</code> &gt;  URI </p>
+<p><strong>粘贴 产品详情 -点击 节点地址旁边 齿轮图标 - Trojan Url 下的内容</strong></p>
+<h3 id="4-设置开机启动"><a href="#4-设置开机启动" class="headerlink" title="4. 设置开机启动"></a>4. 设置开机启动</h3><p>点击顶部菜单 <code>设置</code> &gt; <code>常规设置</code> , 勾选 <code>登陆时启动</code> 即可。</p>
+<p><img src="https://i.loli.net/2020/02/29/P7YoDJ46rRqy9pN.png" alt="开机启动"></p>
+<h3 id="5-注意事项"><a href="#5-注意事项" class="headerlink" title="5. 注意事项"></a>5. 注意事项</h3><p><strong>Trojan - qt5 与 Shadowsocks-WIN 的客户端默认监听端口均为 1080 ，因此一般情况下请不要同时运行两个客户端。</strong><br><strong>如果有同时运行需求请修改任意一个客户端的本地端口设置。</strong></p>
+<p><strong>此答案有用么？</strong>                      是                     否                  </p>
+<h3 id="Also-Read"><a href="#Also-Read" class="headerlink" title="Also Read"></a>Also Read</h3><ul>
+<li><h4 id="【Android】-Trojan-Igniter-设置方法-查看-5619"><a href="#【Android】-Trojan-Igniter-设置方法-查看-5619" class="headerlink" title=" 【Android】 Trojan Igniter 设置方法 (查看: 5619)"></a><img src="https://order.yizhihongxing.network/images/article.gif" alt="Article Icon"> <a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=18" target="_blank" rel="noopener">【Android】 Trojan Igniter 设置方法 </a>(查看: 5619)</h4></li>
+<li><h4 id="Trojan-服务客户端设置教程索引-查看-22560"><a href="#Trojan-服务客户端设置教程索引-查看-22560" class="headerlink" title=" Trojan 服务客户端设置教程索引 (查看: 22560)"></a><img src="https://order.yizhihongxing.network/images/article.gif" alt="Article Icon"> <a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=13" target="_blank" rel="noopener">Trojan 服务客户端设置教程索引 </a>(查看: 22560)</h4></li>
+<li><h4 id="【MacOS】【推荐】TrojanX-设置方法-查看-4732"><a href="#【MacOS】【推荐】TrojanX-设置方法-查看-4732" class="headerlink" title=" 【MacOS】【推荐】TrojanX 设置方法 (查看: 4732)"></a><img src="https://order.yizhihongxing.network/images/article.gif" alt="Article Icon"> <a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=16" target="_blank" rel="noopener">【MacOS】【推荐】TrojanX 设置方法</a> (查看: 4732)</h4></li>
+</ul>
+<p><a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=2" target="_blank" rel="noopener">服务配置</a></p>
+<h2 id="二、【MacOS】【推荐】TrojanX-设置方法"><a href="#二、【MacOS】【推荐】TrojanX-设置方法" class="headerlink" title="二、【MacOS】【推荐】TrojanX 设置方法"></a>二、【MacOS】【推荐】TrojanX 设置方法</h2><p>TrojanX 的使用方法与 ShadowsocksX-NG 基本一致。</p>
+<ul>
+<li>本文对应系统版本为 macOS 15.1</li>
+<li>本文对应的客户端版本 1.0(1) / TrojanX-0.2.zip</li>
+</ul>
+<h2 id="1-下载-安装客户端"><a href="#1-下载-安装客户端" class="headerlink" title="1. 下载/安装客户端"></a>1. 下载/安装客户端</h2><h3 id="1-1-下载"><a href="#1-1-下载" class="headerlink" title="1.1 下载"></a>1.1 下载</h3><p>前往 技术支持 &gt; 资源下载 &gt; Trojan 进行下载： <a href="https://order.yizhihongxing.network/dl.php?type=d&id=20" target="_blank" rel="noopener">TrojanX macOS 客户端(点击下载)</a> 下载得到 <strong>TrojanX-0.2.zip</strong></p>
+<h3 id="1-2-安装"><a href="#1-2-安装" class="headerlink" title="1.2 安装"></a>1.2 安装</h3><p>找到刚才下载的 TrojanX-0.2.zip 并解压得到 TrojanX (一般在托盘的下载文件夹中点击 TrojanX-0.2.zip 后会自动解压并弹出文件窗口)。<br>将 TrojanX 文件拖动至应用程序中。<br><img src="https://i.loli.net/2020/03/10/4uFDNpxHUyJCe1K.gif" alt="trojanx-install.gif"></p>
+<p>然后找到应用程序中的 TrojanX ，初次打开时会提示无法验证开发者，点击取消然后按照下面图片所示在 Finder(访达) 中的应用程序文件夹中找到 TrojanX 右键选择打开。<br><img src="https://i.loli.net/2020/03/10/U7d3fnK6SqZFGur.png" alt="trojanx-verify.png"></p>
+<p>右键选择打开。<br><img src="https://i.loli.net/2020/03/10/lQodvR2qLJTse1C.png" alt="trojanx-force-open-01.png"></p>
+<p>系统会再次确认，请选择打开。<br><img src="https://i.loli.net/2020/03/10/7F1yLlB4mSROUMs.png" alt="trojanx-force-open-02.png"></p>
+<p>第一次打开时需要输入用户密码进行授权，输入密码后点击好。</p>
+<p><img src="https://i.loli.net/2020/03/10/polJCuyeIAafHvm.png" alt="trojanx-force-open-03.png"></p>
+<p>打开后可以在右上角找到 <img src="https://i.loli.net/2020/03/10/wdZUAQzM5gF7DP3.png" alt="trojanx-indicator.png"> 样式的客户端图标。</p>
+<h2 id="2-查看节点信息-1"><a href="#2-查看节点信息-1" class="headerlink" title="2. 查看节点信息"></a>2. 查看节点信息</h2><p>登入到客户中心，依次访问 Services &gt; <a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">My Products &amp; Services</a><a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">( </a><a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">我的产品与服务 </a><a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">- 点击前往)</a> ，查看 Trojan 协议对应的 <code>Rose</code> 服务器信息。</p>
+<p><img src="https://i.loli.net/2020/03/10/eIraRjy3mVQUxAH.png" alt="trojan-service-details.png"></p>
+<h2 id="3-添加节点-1"><a href="#3-添加节点-1" class="headerlink" title="3. 添加节点"></a>3. 添加节点</h2><p><strong>目前 TrojanX 客户端不支持批量导入客户端，当前推荐使用 剪贴板导入(3.3部分) 的方式添加客户端。**</strong>。**</p>
+<h3 id="3-1-手动添加-1"><a href="#3-1-手动添加-1" class="headerlink" title="3.1 手动添加"></a>3.1 手动添加</h3><p>右上角点击客户端图标，在菜单中点击 <code>服务器</code> &gt; <code>服务器设置</code>，打开服务器窗口。<br>按照自己的服务器信息填写后点击确定。<br><img src="https://i.loli.net/2020/03/10/EC9gDWvwNTZH2lr.png" alt="trojanx-add-server.png"></p>
+<h3 id="3-2-扫码添加"><a href="#3-2-扫码添加" class="headerlink" title="3.2 扫码添加"></a>3.2 扫码添加</h3><p><strong>在我们的测试中，存在一直提示无法找到二维码的情况，当前推荐选择 3.3 剪贴板导入的方法进行添加。</strong></p>
+<p>在服务详情页面，点击 <img src="https://order.yizhihongxing.network/modules/servers/trojan/assets/images/qrcode.png" alt="icon-qrcode.png"> 打开需要添加的节点的二维码后，点击客户端菜单中的 <code>扫码屏幕上的二维码</code> 。<br><img src="https://i.loli.net/2020/03/10/W6Y1mwvABgyGeV2.png" alt="trojanx-addby-qr.png"></p>
+<p>macOS 15 中扫码需要授权给客户端屏幕录制权限，否则会提示找不到二维码。   </p>
+<p><img src="https://i.loli.net/2020/03/10/WPxhdKwljRBJnsM.png" alt="img"></p>
+<p>我们需要在系统设置中进行权限设置，打开 <code>系统偏好设置</code> &gt; <code>安全与隐私</code> ，在隐私标签中，左侧找到屏幕录制，勾选 TrojanX。</p>
+<p><img src="https://i.loli.net/2020/03/10/2XbW6Ge5TUtuIpo.png" alt="trojan-qr-privacy.png"></p>
+<p><strong>当客户端菜单顶部显示 Trojan: On 时，表示 TrojanX 已经启用。</strong></p>
+<h3 id="3-3-剪贴板导入"><a href="#3-3-剪贴板导入" class="headerlink" title="3.3 剪贴板导入"></a>3.3 剪贴板导入</h3><p>在服务详情页面，点击 <img src="https://i.loli.net/2020/03/10/DJgz8NcujAtKeUM.png" alt="icon-config.png"> 打开需要添加的节点的服务器配置页面复制 Trojan 链接。</p>
+<p><img src="https://i.loli.net/2020/03/10/oIwq1afQUsdgyk4.png" alt="trojanx-copy-url.png"></p>
+<p>之后点击客户端菜单中的 <code>从剪贴板导入服务器配置链接</code> 即可。<br><img src="https://i.loli.net/2020/03/10/6FLHeuZJGKD9Ahk.png" alt="trojanx-addby-url.png"></p>
+<h2 id="4-配置系统代理模式"><a href="#4-配置系统代理模式" class="headerlink" title="4. 配置系统代理模式"></a>4. 配置系统代理模式</h2><p>点击屏幕右上方菜单栏的 <img src="https://i.loli.net/2020/03/10/wdZUAQzM5gF7DP3.png" alt="trojanx-indicator.png"> &gt; <code>PAC 自动模式</code>。</p>
+<p><img src="https://i.loli.net/2020/03/10/sKbi2rc3JZH8vVY.png" alt="trojanx-set-pac.png"></p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li><strong>PAC模式：</strong> 表示可以实现自动代理，及本来可以访问的网站不会经过代理，推荐日常使用。</li>
+<li><strong>全局模式：</strong> 表示计算机内大多数流量都会经过代理，不推荐日常使用。</li>
+<li><strong>手动模式：</strong> 不设置系统代理，浏览器需要配合扩展才可以使用</li>
+<li>Safari 需要使用系统代理， Firefox / Chrome 在没有安装代理扩展的情况下默认使用的也是系统代理</li>
+</ul>
+<h2 id="5-设置浏览器扩展"><a href="#5-设置浏览器扩展" class="headerlink" title="5. 设置浏览器扩展"></a>5. 设置浏览器扩展</h2><p><strong>TrojanX 默认提供的本地 Socks5 监听端口为 1080 ，一般情况下不需要做改动，如果有同时运行其他 Shadowsocks / V2ray 的客户端可能存在冲突，所以不要同时运行多个代理客户端。</strong></p>
+<h3 id="配置-Chrome-的代理"><a href="#配置-Chrome-的代理" class="headerlink" title="配置 Chrome 的代理"></a>配置 Chrome 的代理</h3><p><strong>如需使用 Chrome 浏览器通过代理浏览网页，请参考下面链接：</strong><br><a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=9" target="_blank" rel="noopener">Chrome安装SwitchyOmega浏览器插件（中文版）</a></p>
+<h2 id="三、【Android】-Trojan-Igniter-设置方法"><a href="#三、【Android】-Trojan-Igniter-设置方法" class="headerlink" title="三、【Android】 Trojan Igniter 设置方法"></a>三、【Android】 Trojan Igniter 设置方法</h2><ul>
+<li>本文对应的客户端版本为 igniter 0.1.0-pre-alpha19</li>
+<li>系统为 Android 10</li>
+</ul>
+<h2 id="1-下载客户端-1"><a href="#1-下载客户端-1" class="headerlink" title="1. 下载客户端"></a>1. 下载客户端</h2><p><strong>更新至 alpha19 时请卸载原来的版本，然后重启手机后再安装使用</strong></p>
+<ul>
+<li>从客户中心下载： <a href="https://order.yizhihongxing.network/dl.php?type=d&id=15" target="_blank" rel="noopener">点击下载</a></li>
+<li>从 Github 下载： <a href="https://github.com/trojan-gfw/igniter/releases" target="_blank" rel="noopener">点击前往</a> 下载 `app-release.apk```</li>
+</ul>
+<h2 id="2-查看节点信息-2"><a href="#2-查看节点信息-2" class="headerlink" title="2. 查看节点信息"></a>2. 查看节点信息</h2><p>登入到客户中心，访问 <a href="https://order.yizhihongxing.network/clientarea.php?action=products" target="_blank" rel="noopener">我的服务(点击前往)</a> ，查看 Trojan 协议对应的 <code>Trojan</code> 服务器信息。</p>
+<p><img src="https://i.loli.net/2020/03/27/hf4RWv25Tl3xEAQ.png" alt="img"></p>
+<h2 id="3-添加节点-2"><a href="#3-添加节点-2" class="headerlink" title="3. 添加节点"></a>3. 添加节点</h2><ul>
+<li>2.1 手动添加</li>
+<li>2.2 扫码添加</li>
+<li>2.3 导入配置文件(批量添加)</li>
+</ul>
+<h3 id="3-1-手动添加-2"><a href="#3-1-手动添加-2" class="headerlink" title="3.1 手动添加"></a>3.1 手动添加</h3><p>首页选项说明</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Remote Address: 服务器地址 </span><br><span class="line">Remote Port: 服务器端口（默认为443） </span><br><span class="line">Password： 服务器密码 </span><br><span class="line">Trojan URL: Trojan 链接 </span><br><span class="line"></span><br><span class="line">Enable IPv6: 是否开启 IPv6 </span><br><span class="line">Verify Certificate: 是否验证证书 </span><br><span class="line">Bypass China with Clash: 是否代理中国大陆的网站</span><br></pre></td></tr></table></figure>
+
+<p>手动添加可以 <code>直接填写服务器信息(3.1.1)</code> 或是 <code>复制 Trojan URL(3.1.2)</code> ，两种方法选择一种即可</p>
+<p>3.1.1 直接填写信息</p>
+<p><img src="https://i.loli.net/2020/03/26/BixDaIQEu4qVtos.jpg" alt="igniter-add-manually-01.jpg"></p>
+<p>3.1.2 复制 Trojan Url</p>
+<p><img src="https://i.loli.net/2020/03/26/zm6wG4fO1npMPgi.jpg" alt="igniter-add-manually-02.jpg"></p>
+<p>添加完成点击 START 即可，初次连接时系统会确认 VPN 权限，请选择允许。</p>
+<p><img src="https://i.loli.net/2020/03/26/9TyrtN2DiLqpYlG.jpg" alt="igniter-permission-request.jpg"></p>
+<h3 id="3-2-扫码添加-1"><a href="#3-2-扫码添加-1" class="headerlink" title="3.2 扫码添加"></a>3.2 扫码添加</h3><p>使用其他设备打开需要添加的节点的二维码。</p>
+<p>点击右上角设置 <img src="https://i.loli.net/2020/03/26/LGS1kXb75BE4oqI.png" alt="icon-more.png"> 按钮，选择 <code>Server List</code> 打开节点列表页面，然后点击二维码按钮进行扫码。</p>
+<p><img src="https://i.loli.net/2020/03/26/kJKQZeqhcTsVldr.png" alt="igniter-add-by-qr.png"></p>
+<h3 id="3-3-导入配置文件"><a href="#3-3-导入配置文件" class="headerlink" title="3.3 导入配置文件"></a>3.3 导入配置文件</h3><p>首先将 Trojan 服务的 <code>gui-config.json</code> 配置文件下载到手机上。</p>
+<p>点击右上角设置 <img src="https://i.loli.net/2020/03/26/LGS1kXb75BE4oqI.png" alt="icon-more.png"> 按钮，选择 <code>Server List</code> 打开节点列表页面，然后点击 <code>更多选项</code> 的按钮，选择 <code>Import from file</code>，选择刚才下载配置文件即可。</p>
+<p><img src="https://i.loli.net/2020/03/26/mXTvt6Ypb8kAfnO.png" alt="igniter-add-by-file.png"></p>
+<h3 id="4-更换节点"><a href="#4-更换节点" class="headerlink" title="4. 更换节点"></a>4. 更换节点</h3><p>点击右上角设置 <img src="https://i.loli.net/2020/03/26/LGS1kXb75BE4oqI.png" alt="icon-more.png"> 按钮，选择 <code>Server List</code> 打开节点列表页面，点击需要切换的节点即可。</p>
+<h2 id="四、【IOS】Shadowrocket-设置方法"><a href="#四、【IOS】Shadowrocket-设置方法" class="headerlink" title="四、【IOS】Shadowrocket 设置方法"></a>四、【IOS】Shadowrocket 设置方法</h2><p><strong>如果类型没有 Trojan 或是扫码时出错，请更新您的 Shadowrocket (客户端图标样式</strong> <img src="https://i.loli.net/2020/02/27/IFLfBpqGuS9Ohzk.png" alt="img"> <strong>)**</strong>版本至 2.1.42 或以上版本。**</p>
+<p>一、直接添加</p>
+<p>打开 Shadowrocket 客户端，按照下面步骤添加服务器信息。</p>
+<p>Shadowrocket 可以直接通过扫码的方式进行添加，或是按照下面的步骤手动添加。</p>
+<ol>
+<li>点击右上角 <code>+</code> 添加新的服务器。</li>
+<li>类型选择 <strong>Trojan</strong></li>
+<li>填写对应的 <strong>服务器、端口、与密码</strong> 后保存即可，其他选项不需要设置。</li>
+</ol>
+<p>二、扫码添加</p>
+<p>打开服务详情页面，点击每个服务器右侧的二维码图标<img src="https://i.loli.net/2020/02/28/UcnN8TxykG3rlhD.png" alt="img">，然后点击“二维码”即可展示二维码。</p>
+<p>打开 Shadowrocket 应用，点击左上角的扫描二维码图标，扫描屏幕上的二维码即可添加。</p>
+<p>选择对应的服务器点击连接，同意 VPN 权限后即连接到互联网。</p>
+<h2 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h2><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/1.png" style="zoom:50%;" />
+
+<center>JP1</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2.png" style="zoom:50%;" />
+
+<center>JP2</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/3.png" style="zoom:50%;" />
+
+<center>JP3</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/4.png" style="zoom:50%;" />
+
+<center>JP4</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/5.png" style="zoom:50%;" />
+
+<center>JP5</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/6.png" style="zoom:50%;" />
+
+<center>JP6</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/7.png" style="zoom:50%;" />
+
+<center>US1</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/8.png" style="zoom:50%;" />
+
+<center>US2</center>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/9.png" style="zoom:50%;" />
+
+<center>US3</center>]]></content>
+      <categories>
+        <category>网络</category>
+      </categories>
+      <tags>
+        <tag>上网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云图床</title>
+    <url>/2020/04/26/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
+<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
+<p><img src="" alt="">   ctrl+shift+i</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
+<ol>
+<li>用自己的域名访问，也就是需要cname</li>
+<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
+</ol>
+<a id="more"></a>
+
+<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
+<ol>
+<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
+<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
+</ol>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
+<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
+<p>简言之，需要备案&gt;&gt;购买服务器</p>
+]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>图床</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建个人博客</title>
+    <url>/2020/03/23/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>估计要注册一个新的github账号对应一个新的域名博客</p>
+<h2 id="一、阿里云域名解析"><a href="#一、阿里云域名解析" class="headerlink" title="一、阿里云域名解析"></a>一、阿里云域名解析</h2><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584967236238.png" alt=""></p>
+<h2 id="二、绑定域名和github-pages"><a href="#二、绑定域名和github-pages" class="headerlink" title="二、绑定域名和github pages"></a>二、绑定域名和github pages</h2><p>仓库下面的<code>settings</code></p>
+<p>刚开始没有custom pages这个选项，提示被禁用，是因为没有内容。点击下面的Choose a theme按钮，选择一个主题后，在就可以了</p>
+<a id="more"></a>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601181041.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584967333079.png" alt=""></p>
+<h2 id="三、安装hexo"><a href="#三、安装hexo" class="headerlink" title="三、安装hexo"></a>三、安装hexo</h2><p>1、全局安装hexo-cli指令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>查看hexo版本</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>2、初始化hexo</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019333586.png" alt=""></p>
+<p>初始化可能报错：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601144459.png" alt=""></p>
+<p>继续报错：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601144630.png" alt=""></p>
+<p>3、开始体验hexo</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>生成静态文件到public文件夹，没有public文件夹就会自动创建，如果有了就会覆盖public内容。</p>
+<p>public文件夹的内容是要提交到github上的。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019420342.png" alt=""></p>
+<p>4、开启本地服务</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容，很多人会碰到浏览器一直在转圈但是就是加载不出来的问题，一般情况下是因为端口占用的缘故，因为4000这个端口太常见了，解决端口冲突问题。</p>
+<p>可以切换端口：<code>hexo s -p</code>+端口</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601150457.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019505505.png" alt=""></p>
+<h2 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h2><p>before（默认主题）</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584976473631.png" alt=""></p>
+<p>after</p>
+<ol>
+<li>hexo-theme-yilia-plus主题</li>
+</ol>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584976397933.png" alt=""></p>
+<h2 id="五、关联hexo和github-page"><a href="#五、关联hexo和github-page" class="headerlink" title="五、关联hexo和github page"></a>五、关联hexo和github page</h2><p><strong>ssh更换电脑还是一样的吗？</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601181931.png" alt=""></p>
+<p>1、配置SSH key</p>
+<p>如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到</p>
+<p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd ~&#x2F;. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017243682.png" alt=""></p>
+<p>提示这个错误，是因为/后边的路径或者变量名有空格，那就需要加双引号</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017331912.png" alt=""></p>
+<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮箱&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017379401.png" alt=""></p>
+<p> 打开用户目录，找到<code>.ssh\id_rsa.pub</code>文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
+<p>刚复制的内容粘贴到key那里，title随便填，保存。 </p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017461062.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017906555.png" alt=""></p>
+<p>测试一下是否成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585018015424.png" alt=""></p>
+<p>看到这个信息说明SSH已配置成功！</p>
+<p>2、设置Git的user name和email</p>
+<p>3、配置deployment</p>
+<p>错的repository写法</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584978594242.png" alt=""></p>
+<p>问题：不能Permission denied —-要设置ssh</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584981806231.png" alt=""></p>
+<p>部署前项目的内容：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585018935914.png" alt=""></p>
+<p>部署后，代码已经更新</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585021099021.png" alt=""></p>
+<p>然后再更新GitHub Pages</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585026520993.png" alt=""></p>
+<p>配置<code>_config.yml</code>中有关deploy的部分：</p>
+<p>正确写法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:saucxs&#x2F;saucxs.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>错误写法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: github</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;saucxs&#x2F;saucxs.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>后面一种写法是hexo2.x的写法，现在已经不行了，无论是哪种写法，此时直接执行<code>hexo d</code>的话一般会报如下错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Deployer not found: github 或者 Deployer not found: git</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019792689.png" alt=""></p>
+<p>需要安装一个插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>再次输入hexo d，就ok了。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/444.png" alt=""></p>
+<h2 id="修改文件后："><a href="#修改文件后：" class="headerlink" title="修改文件后："></a>修改文件后：</h2><p>打开是404，而且GitHub Pages下面的custom domain配置项也会被清空</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585028379484.png" alt=""></p>
+<p>要在source 目录添加一个新文件CNAME，内容写上域名</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585029863643.png" alt=""></p>
+<p>修改文件，上传到github上</p>
+<p>在GitHub_Blog文件下，执行命令(建议每次都按照如下步骤部署)：</p>
+<blockquote>
+<p>hexo clean   //清除缓存和已生成的静态文件<br>hexo generate   //构建，生成页面<br>hexo deploy   //部署</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo博客优化</title>
+    <url>/2020/05/30/hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<p>hexo下文章的排版如何优化：宽度，字体，图片大小</p>
+<p>图片太大</p>
+<p>自定义url，默认的是<code>/发表日期/标题</code></p>
+<p>加载太慢了&gt;&gt;&gt;第三方cdn加速</p>
+<p>更新了文章，发表时间也没更新</p>
+<p>升级hexo主题</p>
+<a id="more"></a>
+
+<p>第三方工具：</p>
+<p>搜狐的畅言开放评论</p>
+<p><a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>阅读次数</p>
+<h3 id="1-设置标签、分类的界面"><a href="#1-设置标签、分类的界面" class="headerlink" title="1.设置标签、分类的界面"></a>1.设置标签、分类的界面</h3><p>设置菜单那里，我设置了显示标签、分类、关于几个选项。但是点击进去，却报错：404</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529095825.png" alt=""></p>
+<p>只需要在source 目录下创建文件即可</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">hexo new page 'about'(tags/categories)</span><br></pre></td></tr></table></figure>
+
+<p>有时候在vscode终端/powershell 创建报错，需要用git bash创建</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529095402.png" alt=""></p>
+<p>修改这tags和categories文件夹中的index.md文件，新增type属性，如下：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529100522.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2020-05-29 09:51:59</span><br><span class="line">type: tags</span><br></pre></td></tr></table></figure>
+
+<p>修改好，还是报404，url出现 <code>%20</code>，空格的意思<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529103304.png" alt=""></p>
+<p>theme下面的配置文件，<code>||</code>之前出现了空格，删除空格即可</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529102210.png" alt=""></p>
+<h3 id="2-实现点击出现桃心效果"><a href="#2-实现点击出现桃心效果" class="headerlink" title="2. 实现点击出现桃心效果"></a>2. 实现点击出现桃心效果</h3><p>在themes/hexo-theme-next/source/js/src下新建文件 clicklove.js ，接着把该链接下的代码拷贝粘贴到 clicklove.js 文件中。<br>代码如下：</p>
+<ol start="4">
+<li><pre><code class="js">!<span class="function"><span class="keyword">function</span>(<span class="params">e,t,a</span>)</span>{<span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>)</span>{c(<span class="string">".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"</span>),o(),r()}<span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>)</span>{<span class="keyword">for</span>(<span class="keyword">var</span> e=<span class="number">0</span>;e&lt;d.length;e++)d[e].alpha&lt;=<span class="number">0</span>?(t.body.removeChild(d[e].el),d.splice(e,<span class="number">1</span>)):(d[e].y--,d[e].scale+=<span class="number">.004</span>,d[e].alpha-=<span class="number">.013</span>,d[e].el.style.cssText=<span class="string">"left:"</span>+d[e].x+<span class="string">"px;top:"</span>+d[e].y+<span class="string">"px;opacity:"</span>+d[e].alpha+<span class="string">";transform:scale("</span>+d[e].scale+<span class="string">","</span>+d[e].scale+<span class="string">") rotate(45deg);background:"</span>+d[e].color+<span class="string">";z-index:99999"</span>);requestAnimationFrame(r)}<span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params"></span>)</span>{<span class="keyword">var</span> t=<span class="string">"function"</span>==<span class="keyword">typeof</span> e.onclick&amp;&amp;e.onclick;e.onclick=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{t&amp;&amp;t(),i(e)}}<span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>)</span>{<span class="keyword">var</span> a=t.createElement(<span class="string">"div"</span>);a.className=<span class="string">"heart"</span>,d.push({<span class="attr">el</span>:a,<span class="attr">x</span>:e.clientX<span class="number">-5</span>,<span class="attr">y</span>:e.clientY<span class="number">-5</span>,<span class="attr">scale</span>:<span class="number">1</span>,<span class="attr">alpha</span>:<span class="number">1</span>,<span class="attr">color</span>:s()}),t.body.appendChild(a)}<span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params">e</span>)</span>{<span class="keyword">var</span> a=t.createElement(<span class="string">"style"</span>);a.type=<span class="string">"text/css"</span>;<span class="keyword">try</span>{a.appendChild(t.createTextNode(e))}<span class="keyword">catch</span>(t){a.styleSheet.cssText=e}t.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(a)}<span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>)</span>{<span class="keyword">return</span><span class="string">"rgb("</span>+(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">","</span>+(<span class="number">255</span><span class="built_in">Math</span>.random())+<span class="string">","</span>+~~(<span class="number">255</span><span class="built_in">Math</span>.random())+<span class="string">")"</span>}<span class="keyword">var</span> d=[];e.requestAnimationFrame=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{<span class="keyword">return</span> e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{setTimeout(e,<span class="number">1e3</span>/<span class="number">60</span>)}}(),n()}(<span class="built_in">window</span>,<span class="built_in">document</span>);
+&lt;!--￼<span class="number">2</span>--&gt;
+
+
+</code></pre>
+</li>
+</ol>
+<h3 id="3-设置网站的图标Favicon"><a href="#3-设置网站的图标Favicon" class="headerlink" title="3. 设置网站的图标Favicon"></a>3. 设置网站的图标Favicon</h3><p>在<a href="http://www.easyicon.net/" target="_blank" rel="noopener">EasyIcon</a>中找一张（32*32）的<code>ico</code>图标,或者去别的网站下载或者制作，并将图标名称改为<code>favicon.ico</code>，然后把图标放在<code>/themes/hexo-theme-next/source/images</code>里，并且修改主题配置文件：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/images/favicon-16x16-pig.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/images/favicon-32x32-pig.png</span></span><br></pre></td></tr></table></figure>
+
+<p>只需要把images目录下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">favicon-16x16-next.png文件和</span><br><span class="line">favicon-32x32-next.png文件替换成自己喜欢的就可以了</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-添加顶部加载条"><a href="#4-添加顶部加载条" class="headerlink" title="4. 添加顶部加载条"></a>4. 添加顶部加载条</h3><h3 id="5-阅读次数-热度"><a href="#5-阅读次数-热度" class="headerlink" title="5.阅读次数/热度"></a>5.阅读次数/热度</h3><p>使用<a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>实现，enable属性改为<code>true</code></p>
+<p>“阅读次数”这些字也可以改</p>
+<p>next主题集成leanCloud，打开\blog-generator\themes\hexo-theme-next/layout/_macro/post.swig,在画红线的区域添加℃。</p>
+<p>然后打开，<code>\blog-generator\themes\hexo-theme-next/languages/zh-Hans.yml</code>,将画红框的改为热度就可以了</p>
+<p>创建应用：控制台 -&gt; 创建应用（开发版）<br>应用名称可以随意输入，后面还可以修改，我用的是 test；<br>创建 Class：点击刚创建的 test 应用，创建一个 Class 表用来保存我们的博客访问数据。<br>此处创建的 Class 名字必须为 Counter，用来保证与 NexT 主题的修改相兼容；<br>ACL 权限选择 无限制，避免后续因为权限的问题导致次数统计显示不正常</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529140833.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529141647.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200529142527.png" alt=""></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">leancloud_visitors:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="string">xxx(leancloud</span> <span class="string">上面的</span> <span class="string">AppID)</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="string">xxx(leancloud</span> <span class="string">上面的</span> <span class="string">AppKey)</span></span><br></pre></td></tr></table></figure>
+
+<p><code>进文章详情可以看到阅读次数</code></p>
+<h3 id="6-评论功能（valine）"><a href="#6-评论功能（valine）" class="headerlink" title="6.评论功能（valine）"></a>6.评论功能（valine）</h3><p>也用到<a href="https://leancloud.cn/" target="_blank" rel="noopener">leancloud</a>，用同一个appid和appkey。而且只用创建一个Class，当你开启了valine，自动加载了一个<code>Comment</code> 的Class</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530005045.png" alt=""></p>
+<h3 id="7-阅读全文"><a href="#7-阅读全文" class="headerlink" title="7. 阅读全文"></a>7. 阅读全文</h3><p>两种方法：</p>
+<p>1 打开主题配置文件_config.yml，ctrl + F搜索找到”auto_excerpt”，改为true</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+
+<p>2 在post每篇文章使用<code>&lt; !--more--&gt;</code> 手动进行截断</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530005950.png" alt=""></p>
+<h3 id="8-上传头像-并设置头像旋转效果"><a href="#8-上传头像-并设置头像旋转效果" class="headerlink" title="8. 上传头像,并设置头像旋转效果"></a>8. 上传头像,并设置头像旋转效果</h3><p>设置头像:<br>打开<code>themes/next/_config.yml</code>找到<code>avatar: /images/avatar.gif</code>;<br>其中<code>images</code>文件在<code>themes/next\source\</code>中,将你的头像图片放到images中,一般默认<br>命名为avatar,记得改下后缀就可以了.<br>设置旋转效果:<br>打开<code>themes\next\source\css\_common\components\sidebar\sidebar-author.styl</code>,<br>全部替换为下列代码</p>
+<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.site-author-image</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="variable">$site</span>-author-image-padding;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="variable">$site</span>-author-image-width;</span><br><span class="line">  <span class="attribute">height</span>: <span class="variable">$site</span>-author-image-height;</span><br><span class="line">  <span class="attribute">border</span>: <span class="variable">$site</span>-author-image-border-width solid <span class="variable">$site</span>-author-image-border-color;</span><br><span class="line"></span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  -webkit-<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  -moz-<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-author-image</span>:hover &#123;</span><br><span class="line">    -webkit-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -moz-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -ms-<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">    -<span class="attribute">transform</span>: rotate(<span class="number">360deg</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-author-name</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="variable">$site</span>-author-name-margin;</span><br><span class="line">  <span class="attribute">text-align</span>: <span class="variable">$site</span>-author-name-align;</span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$site</span>-author-name-color;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="variable">$site</span>-author-name-weight;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.site-description</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="variable">$site</span>-description-margin-top;</span><br><span class="line">  <span class="attribute">text-align</span>: <span class="variable">$site</span>-description-align;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$site</span>-description-font-size;</span><br><span class="line">  <span class="attribute">color</span>: <span class="variable">$site</span>-description-color;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="9-分类和标签设置"><a href="#9-分类和标签设置" class="headerlink" title="9. 分类和标签设置"></a>9. 分类和标签设置</h3><h4 id="1、创建“分类”选项"><a href="#1、创建“分类”选项" class="headerlink" title="1、创建“分类”选项"></a>1、创建“分类”选项</h4><h5 id="1-1-生成“分类”页并添加tpye属性"><a href="#1-1-生成“分类”页并添加tpye属性" class="headerlink" title="1.1 生成“分类”页并添加tpye属性"></a>1.1 生成“分类”页并添加tpye属性</h5><p>打开命令行，进入博客所在文件夹。执行命令</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> page categories</span><br></pre></td></tr></table></figure>
+
+<p>根据上面的路径，找到<code>index.md</code>这个文件，打开后默认内容是这样的：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 文章分类</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-27</span> 13<span class="selector-pseudo">:47</span><span class="selector-pseudo">:40</span></span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+<p>添加<code>type: &quot;categories&quot;</code>到内容中，添加后是这样的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-2-给文章添加“categories”属性"><a href="#1-2-给文章添加“categories”属性" class="headerlink" title="1.2 给文章添加“categories”属性"></a>1.2 给文章添加“categories”属性</h5><p>打开需要添加分类的文章，在为其添加categories属性。下方的<code>categories: web前端</code>表示添加这篇文章到“web前端”这个分类。注意：hexo一篇文章只能属于一个分类，也就是说如果在“- web前端”下方添加“-xxx”，hexo不会产生两个分类，而是把分类嵌套（即该文章属于 “- web前端”下的 “-xxx ”分类）。</p>
+<p>用<code>---</code>创建前页，title和date没写就按默认的</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530020244.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: 阿里云图床</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-26</span> 12<span class="selector-pseudo">:12</span><span class="selector-pseudo">:57</span></span><br><span class="line"><span class="selector-tag">categories</span>: </span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">web</span>前端</span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+<p>至此，成功给文章添加分类，点击首页的“分类”可以看到该分类下的所有文章。当然，只有添加了<code>categories: xxx</code>的文章才会被收录到首页的“分类”中。</p>
+<h4 id="2、创建“标签”选项"><a href="#2、创建“标签”选项" class="headerlink" title="2、创建“标签”选项"></a>2、创建“标签”选项</h4><h4 id="2-1-生成“标签”页并添加tpye属性"><a href="#2-1-生成“标签”页并添加tpye属性" class="headerlink" title="2.1 生成“标签”页并添加tpye属性"></a>2.1 生成“标签”页并添加tpye属性</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> page tags</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">--</span></span><br><span class="line"><span class="selector-tag">title</span>: 标签</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-27</span> 14<span class="selector-pseudo">:22</span><span class="selector-pseudo">:08</span></span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+<p>添加<code>type: &quot;tags&quot;</code>到内容中，添加后是这样的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2017-05-27 13:47:40</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-给文章添加“tags”属性"><a href="#2-2-给文章添加“tags”属性" class="headerlink" title="2.2 给文章添加“tags”属性"></a>2.2 给文章添加“tags”属性</h4><p>打开需要添加标签的文章，为其添加tags属性。下方的<code>tags:</code>下方的<code>- jQuery</code> <code>- 表格</code> <code>- 表单验证</code>就是这篇文章的标签了</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">---</span></span><br><span class="line"><span class="selector-tag">title</span>: <span class="selector-tag">jQuery</span>对表单的操作及更多应用</span><br><span class="line"><span class="selector-tag">date</span>: 2017<span class="selector-tag">-05-26</span> 12<span class="selector-pseudo">:12</span><span class="selector-pseudo">:57</span></span><br><span class="line"><span class="selector-tag">categories</span>: </span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">web</span>前端</span><br><span class="line"><span class="selector-tag">tags</span>:</span><br><span class="line"><span class="selector-tag">-</span> <span class="selector-tag">jQuery</span></span><br><span class="line"><span class="selector-tag">-</span> 表格</span><br><span class="line"><span class="selector-tag">-</span> 表单验证</span><br><span class="line"><span class="selector-tag">---</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="10-标签和分类界面不需要评论"><a href="#10-标签和分类界面不需要评论" class="headerlink" title="10.标签和分类界面不需要评论"></a>10.标签和分类界面不需要评论</h3><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530112608.png" alt=""></p>
+<p>在tags/about 等的<code>index.md</code>文件加入<code>comments:false</code></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530115511.png" alt=""></p>
+<h3 id="11-联系我"><a href="#11-联系我" class="headerlink" title="11.联系我"></a>11.联系我</h3><h3 id="12-调整页面宽度xxx"><a href="#12-调整页面宽度xxx" class="headerlink" title="12.调整页面宽度xxx"></a>12.调整页面宽度xxx</h3><h3 id="13-搜索功能"><a href="#13-搜索功能" class="headerlink" title="13.搜索功能"></a>13.搜索功能</h3><p>先安装插件：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>之后先在站点配置里末尾增加以下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">	path: search.xml </span><br><span class="line">	field: post </span><br><span class="line">	format: html </span><br><span class="line">	limit: 10000</span><br></pre></td></tr></table></figure>
+
+<p>再在主题配置文件里搜索找到 local_search修改为如下：修改为true</p>
+<p>预览：</p>
+<p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-5-30 22-19-52.gif)</p>
+<h3 id="14-给代码块添加复制功能-代码高亮"><a href="#14-给代码块添加复制功能-代码高亮" class="headerlink" title="14.给代码块添加复制功能/代码高亮"></a>14.给代码块添加复制功能/代码高亮</h3><p>下载 clipboard.js</p>
+<p>三方插件 clipboardjs ，相关介绍和兼容性我就不赘述了，去它<a href="https://clipboardjs.com/" target="_blank" rel="noopener">主页</a>或<a href="https://github.com/zenorocha/clipboard.js" target="_blank" rel="noopener">github</a>上看。</p>
+<p><strong>下载地址：</strong></p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.js" target="_blank" rel="noopener">clipboard.js</a></li>
+<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.min.js" target="_blank" rel="noopener">clipboard.min.js</a> <strong>推荐</strong></li>
+</ul>
+<p>保存文件<code>clipboard.js / clipboard.min.js</code> ，目录如下：<br><code>.\themes\next\source\js\src</code></p>
+<p>clipboardjs 使用</p>
+<p>也是在<code>.\themes\next\source\js\src</code>目录下，创建<code>clipboard-use.js</code>，文件内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*页面载入完成后，创建复制按钮*&#x2F;  !function (e, t, a) &#123;     &#x2F;* code *&#x2F;    var initCopyCode &#x3D; function()&#123;      var copyHtml &#x3D; &#39;&#39;;      copyHtml +&#x3D; &#39;&lt;button class&#x3D;&quot;btn-copy&quot; data-clipboard-snippet&#x3D;&quot;&quot;&gt;&#39;;      &#x2F;&#x2F;fa fa-globe可以去字体库替换自己想要的图标copyHtml +&#x3D; &#39;  &lt;i class&#x3D;&quot;fa fa-clipboard&quot;&gt;&lt;&#x2F;i&gt;&lt;span&gt;copy&lt;&#x2F;span&gt;&#39;;      copyHtml +&#x3D; &#39;&lt;&#x2F;button&gt;&#39;;      $(&quot;.highlight .code pre&quot;).before(copyHtml);      new ClipboardJS(&#39;.btn-copy&#39;, &#123;          target: function(trigger) &#123;              return trigger.nextElementSibling;          &#125;      &#125;);    &#125;    initCopyCode();  &#125;(window, document);</span><br></pre></td></tr></table></figure>
+
+<p>在<code>.\themes\next\source\css\_custom\custom.styl</code>样式文件中添加下面代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;代码块复制按钮.highlight&#123;  &#x2F;&#x2F;方便copy代码按钮（btn-copy）的定位  position: relative;&#125;.btn-copy &#123;    display: inline-block;    cursor: pointer;    background-color: #eee;    background-image: linear-gradient(#fcfcfc,#eee);    border: 1px solid #d5d5d5;    border-radius: 3px;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;    -webkit-appearance: none;    font-size: 13px;    font-weight: 700;    line-height: 20px;    color: #333;    -webkit-transition: opacity .3s ease-in-out;    -o-transition: opacity .3s ease-in-out;    transition: opacity .3s ease-in-out;    padding: 2px 6px;    position: absolute;    right: 5px;    top: 5px;    opacity: 0;&#125;.btn-copy span &#123;    margin-left: 5px;&#125;.highlight:hover .btn-copy&#123;  opacity: 1;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>引用</p>
+<p>在<code>.\themes\next\layout\_layout.swig</code>文件中，添加引用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 代码块复制功能 --&gt;&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;src&#x2F;clipboard.min.js&quot;&gt;&lt;&#x2F;script&gt;  &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;src&#x2F;clipboard-use.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>设置完这个copy比较丑，而且在左上角，需要调整一下</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530212129.png" alt=""></p>
+<h3 id="16-打赏"><a href="#16-打赏" class="headerlink" title="16.打赏"></a>16.打赏</h3><h3 id="修改打赏字体不闪动xxx"><a href="#修改打赏字体不闪动xxx" class="headerlink" title="修改打赏字体不闪动xxx"></a>修改打赏字体不闪动xxx</h3><p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-5-30 18-10-54.gif)</p>
+<p>修改文件 <code>next/source/css/_common/components/post/post-reward.styl</code>，然后注释其中的函数 <code>wechat:hover</code> 和 <code>alipay:hover</code> ，如下：</p>
+<figure class="highlight styl"><table><tr><td class="code"><pre><span class="line">* 注释文字闪动函数</span><br><span class="line"> <span class="selector-id">#wechat</span>:hover p&#123;</span><br><span class="line">    <span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -webkit-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -moz-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line"> <span class="selector-id">#alipay</span>:hover p&#123;</span><br><span class="line">   <span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -webkit-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">    -moz-<span class="attribute">animation</span>: roll <span class="number">0.1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="16-侧边栏设置"><a href="#16-侧边栏设置" class="headerlink" title="16.侧边栏设置"></a>16.侧边栏设置</h3><h3 id="17-设置文章更新时间，不仅仅有发表时间"><a href="#17-设置文章更新时间，不仅仅有发表时间" class="headerlink" title="17.设置文章更新时间，不仅仅有发表时间"></a>17.设置文章更新时间，不仅仅有发表时间</h3><h3 id="18-修改主题页面布局为圆角"><a href="#18-修改主题页面布局为圆角" class="headerlink" title="18.修改主题页面布局为圆角"></a>18.修改主题页面布局为圆角</h3><p>修改主题页面为圆角，有两种方法：</p>
+<p>第一种：</p>
+<p>打开文件，路径：/themes/next/source/css/_variables/custom.styl，粘贴如下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">// Variables of Gemini scheme</span><br><span class="line">// =================================================</span><br><span class="line">@import "Pisces.styl";</span><br><span class="line">// Settings for some of the most global styles.</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">$body-bg-color                   = #eee</span><br><span class="line">// Borders.</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">$box-shadow-inner                 = 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12)</span><br><span class="line">$box-shadow                       = 0 2px 2px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.12), 0 -1px .5px 0 rgba(0,0,0,.09)</span><br><span class="line">$border-radius-inner             = initial</span><br><span class="line">$border-radius                   = initial</span><br><span class="line">$border-radius-inner           = 15px 15px 15px 15px;</span><br><span class="line">$border-radius                 = 15px;</span><br></pre></td></tr></table></figure>
+
+<p>第二种：</p>
+<p>打开文件，路径：\themes\next\source\css_variables\Gemini.styl ，添加以下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">border-radius-inner = 15px 15px 15px 15px;</span><br><span class="line">border-radius = 15px;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="19-去掉顶部黑线"><a href="#19-去掉顶部黑线" class="headerlink" title="19.去掉顶部黑线"></a>19.去掉顶部黑线</h3><p>打开文件，路径：themes\next\source\css_custom\custom.styl ，添加以下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">//去掉顶部黑线：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="20-修改文章底部-为图标"><a href="#20-修改文章底部-为图标" class="headerlink" title="20.修改文章底部#为图标"></a>20.修改文章底部#为图标</h3><p>我们正常写的文章，如果有标签的话会在文章末尾出现标签。像这样：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530135426.png" alt=""></p>
+<p><code>#</code>不好看，把它换为图标</p>
+<p>打开文件，路径：/themes/next/layout/_macro/post.swig 搜索找到 rel=”tag”&gt;#   把#替换为如下代码：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-tag"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1590818251278.png" alt="1590818251278"></p>
+<h3 id="21-去掉文章中图片默认的边框xxx"><a href="#21-去掉文章中图片默认的边框xxx" class="headerlink" title="21.去掉文章中图片默认的边框xxx"></a>21.去掉文章中图片默认的边框xxx</h3><p>打开文件，</p>
+<p>/themes/next/source/css/_common/components/post/post-expand.styl，找到img，把border修改为none</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530144721.png" alt=""></p>
+<h3 id="22-更改上一篇，下一篇的顺序"><a href="#22-更改上一篇，下一篇的顺序" class="headerlink" title="22.更改上一篇，下一篇的顺序"></a>22.更改上一篇，下一篇的顺序</h3><p>进入一篇文章，在文章底部，有上下篇的链接（&lt; &gt;），但是点 &gt; 发现进入的是页面中的的上面那篇文章，与操作习惯不符，别扭。</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;!-- 文件位置：~/blog/themes/next/layout/_macro/post.swig --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>把后面五个next改为prev，prev改为next</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530175739.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>小妙招</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>天猫618弹窗关闭</title>
+    <url>/2020/06/03/%E5%A4%A9%E7%8C%AB618%E5%BC%B9%E7%AA%97%E5%85%B3%E9%97%AD/</url>
+    <content><![CDATA[<p>临近电商大促，这些弹窗就多了起来。我已经很久没看到广告弹窗了，因为用了火绒来拦截弹窗，效果还不错。这是一个天猫活动弹窗，火绒居然没有拦截。还好这个弹窗没那么流氓，是直接按退出就真是退出了，不会跳转到浏览器打开网页。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%B9%E7%AA%97.gif" alt=""></p>
+<a id="more"></a>
+
+<p>1.基本方法</p>
+<p>天猫618弹窗时先不要关掉，按Ctrl+Alt+Delete,打开资源管理器，能看到弹窗进程：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210618.png" alt=""></p>
+<p>右键，点开属性，可以看到安装位置：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210814.png" alt=""></p>
+<p>居然是搜狗输入法的弹窗，吃香很难看啊。打开<code>SogouInput\9.3.0.3129</code>目录，找到<code>ShowInfo.exe</code>，删除</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603211233.png" alt=""></p>
+<p>2.进阶方法</p>
+<p>如果上述方法无效，则尝试以下方法：</p>
+<p>Windows Defender 防火墙&gt;&gt;高级设置，然后配置入站规则。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604112915.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%A5%E7%AB%99%E8%A7%84%E5%88%99.gif" alt=""></p>
+<p>重启即可。</p>
+<p>3.如果上述方法都不行，只能出杀手锏了。</p>
+<p>创建一个TXT里面随便写东西，改成同样的文件名<code>ShowInfo.exe</code>，替换掉原版，修改属性为只读不可写入。因为不可写入所以输入法没法联网更新这个文件，而下载新文件也会由于重复名称失败。右键属性，常规只读，然后点安全，编辑，everyone,拒绝打勾。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130021.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130824.png" alt=""></p>
+<p>成功！</p>
+]]></content>
+      <categories>
+        <category>小妙招</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2020/06/04/test/</url>
+    <content><![CDATA[<blockquote>
+<p><font color="ff0000">版权声明：本文为原创，欢迎转载，转载请注明出处，勿用于商业用途！</font></p>
+</blockquote>
+<p>&emsp;&emsp;答自己：<br>想想自己的腿，如果明天<br>姑娘的腿，还没我的腿好看，还没我的细，还没我的白<br>走路的风姿也不够我风骚妖娆<br>我拜腿？我拜个屁！我看腿？我看个屁<br>我自己的更好看，更舒服，更白细<br>&emsp;&emsp;怀抱着这样的心态修炼？<br>CC德六字真言：真好，真细，真白<br>摸了摸自己的腿，指日可待<br>这个世界，自己好玩，更重要<br>&emsp;&emsp;自己的好玩比男女朋友好玩，更重要！<font color="ff0000"> ; </font></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo推送到github没有posts文件夹</title>
+    <url>/2020/06/06/hexo%E6%8E%A8%E9%80%81%E5%88%B0github%E6%B2%A1%E6%9C%89posts%E6%96%87%E4%BB%B6%E5%A4%B9/</url>
+    <content><![CDATA[<p>本地文件：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200606145455.png" alt=""></p>
+<p>项目github上的内容：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200606145140.png" alt=""></p>
+<p>git clone 后的文件：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200606145254.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+  </entry>
+</search>
