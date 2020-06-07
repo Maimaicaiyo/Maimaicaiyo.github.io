@@ -1,7 +1,7 @@
 ---
 categories:
 - 博客
-	-博客更新维护
+- 更新维护
 ---
 
 本来在家里搭建了自己的博客，然后有时候在公司电脑想提交更新博客，搜集相关资料，总结如下方法。
@@ -12,6 +12,8 @@ categories:
 >
 > hexo的源文件（部署环境文件）可以都放在hexo分支上（可以新创建一个hexo分支），换新电脑时，直接`git clone hexo分支地址`即可。
 
+<!--more-->
+
 ### 一、hexo搭建博客原理
 
 hexo博客的部署环境目录：
@@ -20,7 +22,7 @@ hexo博客的部署环境目录：
 
 hexo博客的目录结构解析：
 
-![](https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2859254-8ac27ff2282797b0 (1).jpg)
+![](https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/155.jpg)
 
 上传到github( master)的文件是这些：
 
