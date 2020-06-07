@@ -308,7 +308,8 @@
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530175739.png" alt=""></p>
 ]]></content>
       <categories>
-        <category>博客 -博客优化</category>
+        <category>博客</category>
+        <category>优化</category>
       </categories>
   </entry>
   <entry>
@@ -355,10 +356,12 @@
 <p>hexo生成的静态博客文件默认放在master分支上。</p>
 <p>hexo的源文件（部署环境文件）可以都放在hexo分支上（可以新创建一个hexo分支），换新电脑时，直接<code>git clone hexo分支地址</code>即可。</p>
 </blockquote>
+<a id="more"></a>
+
 <h3 id="一、hexo搭建博客原理"><a href="#一、hexo搭建博客原理" class="headerlink" title="一、hexo搭建博客原理"></a>一、hexo搭建博客原理</h3><p>hexo博客的部署环境目录：</p>
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607102918.png" alt=""></p>
 <p>hexo博客的目录结构解析：</p>
-<p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2859254-8ac27ff2282797b0" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2859254-8ac27ff2282797b0</a> (1).jpg)</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/155.jpg" alt=""></p>
 <p>上传到github( master)的文件是这些：</p>
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607103129.png" alt=""></p>
 <blockquote>
@@ -406,7 +409,7 @@
 <h3 id="四、回到家里电脑更新并提交博客"><a href="#四、回到家里电脑更新并提交博客" class="headerlink" title="四、回到家里电脑更新并提交博客"></a>四、回到家里电脑更新并提交博客</h3><p><strong>注意： 每次换电脑进行博客更新时，不管上次在其他电脑有没有更新，最好先<code>git pull</code></strong></p>
 ]]></content>
       <categories>
-        <category>博客 -博客更新维护</category>
+        <category>博客 - 更新维护</category>
       </categories>
   </entry>
   <entry>
