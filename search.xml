@@ -594,6 +594,8 @@
     <url>/2020/06/01/%E7%AC%AC%E4%BA%8C%E4%B8%AAhexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>提示存在了</p>
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601183034.png" alt=""></p>
+<a id="more"></a>
+
 <p>私钥和公钥</p>
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601183800.png" alt=""></p>
 <p> <strong>这里提示输入密码 我本来以为是输入自己的git账号的密码， 但是发现 括号写着（空 无口令）</strong></p>
@@ -633,7 +635,7 @@
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200606165117.png" alt=""></p>
 <h3 id="文章排版"><a href="#文章排版" class="headerlink" title="文章排版"></a>文章排版</h3><p>如果粘贴为纯文本</p>
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200602170031.png" alt=""></p>
-<h3 id="hexo博文，用设置摘要，点击“阅读全文”后，会自动跳转到后面的文本"><a href="#hexo博文，用设置摘要，点击“阅读全文”后，会自动跳转到后面的文本" class="headerlink" title="hexo博文，用设置摘要，点击“阅读全文”后，会自动跳转到后面的文本"></a>hexo博文，用<a id="more"></a>设置摘要，点击“阅读全文”后，会自动跳转到<!--more-->后面的文本</h3><p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-6-3 10-13-46.gif)</p>
+<h3 id="hexo博文，用设置摘要，点击“阅读全文”后，会自动跳转到后面的文本"><a href="#hexo博文，用设置摘要，点击“阅读全文”后，会自动跳转到后面的文本" class="headerlink" title="hexo博文，用设置摘要，点击“阅读全文”后，会自动跳转到后面的文本"></a>hexo博文，用<!--more-->设置摘要，点击“阅读全文”后，会自动跳转到<!--more-->后面的文本</h3><p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/GIF</a> 2020-6-3 10-13-46.gif)</p>
 <p>主题配置文件：改为<code>scroll_to_more: false</code>。点击阅读全文就会滚动条跳到文章的最上面</p>
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603102930.png" alt=""></p>
 <h3 id="在-Markdown-语言中，如何实现段首空格的显示-？"><a href="#在-Markdown-语言中，如何实现段首空格的显示-？" class="headerlink" title="在 Markdown 语言中，如何实现段首空格的显示 ？"></a>在 Markdown 语言中，如何实现段首空格的显示 ？</h3><p>段首缩进这件事，应该是 CSS 或者其他排版工具的事情，Markdown 奉行的是样式和内容分开的哲学。</p>
