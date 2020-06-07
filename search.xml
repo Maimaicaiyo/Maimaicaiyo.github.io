@@ -1,52 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>天猫618弹窗关闭</title>
-    <url>/2020/06/03/%E5%A4%A9%E7%8C%AB618%E5%BC%B9%E7%AA%97%E5%85%B3%E9%97%AD/</url>
-    <content><![CDATA[<p>临近电商大促，这些弹窗就多了起来。我已经很久没看到广告弹窗了，因为用了火绒来拦截弹窗，效果还不错。这是一个天猫活动弹窗，火绒居然没有拦截。还好这个弹窗没那么流氓，是直接按退出就真是退出了，不会跳转到浏览器打开网页。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%B9%E7%AA%97.gif" alt=""></p>
+    <title>阿里云图床</title>
+    <url>/2020/06/07/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
+<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
+<p><img src="" alt="">   ctrl+shift+i</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
+<ol>
+<li>用自己的域名访问，也就是需要cname</li>
+<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
+</ol>
 <a id="more"></a>
 
-<p>1.基本方法</p>
-<p>天猫618弹窗时先不要关掉，按Ctrl+Alt+Delete,打开资源管理器，能看到弹窗进程：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210618.png" alt=""></p>
-<p>右键，点开属性，可以看到安装位置：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210814.png" alt=""></p>
-<p>居然是搜狗输入法的弹窗，吃香很难看啊。打开<code>SogouInput\9.3.0.3129</code>目录，找到<code>ShowInfo.exe</code>，删除</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603211233.png" alt=""></p>
-<p>2.进阶方法</p>
-<p>如果上述方法无效，则尝试以下方法：</p>
-<p>Windows Defender 防火墙&gt;&gt;高级设置，然后配置入站规则。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604112915.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%A5%E7%AB%99%E8%A7%84%E5%88%99.gif" alt=""></p>
-<p>重启即可。</p>
-<p>3.如果上述方法都不行，只能出杀手锏了。</p>
-<p>创建一个TXT里面随便写东西，改成同样的文件名<code>ShowInfo.exe</code>，替换掉原版，修改属性为只读不可写入。因为不可写入所以输入法没法联网更新这个文件，而下载新文件也会由于重复名称失败。右键属性，常规只读，然后点安全，编辑，everyone,拒绝打勾。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130021.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130824.png" alt=""></p>
-<p>成功！</p>
+<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
+<ol>
+<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
+<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
+</ol>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
+<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
+<p>简言之，需要备案&gt;&gt;购买服务器</p>
 ]]></content>
       <categories>
-        <category>小妙招</category>
+        <category>博客 -优化</category>
+      </categories>
+      <tags>
+        <tag>图床</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建个人博客</title>
+    <url>/2020/06/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>估计要注册一个新的github账号对应一个新的域名博客</p>
+<h2 id="一、阿里云域名解析"><a href="#一、阿里云域名解析" class="headerlink" title="一、阿里云域名解析"></a>一、阿里云域名解析</h2><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584967236238.png" alt=""></p>
+<h2 id="二、绑定域名和github-pages"><a href="#二、绑定域名和github-pages" class="headerlink" title="二、绑定域名和github pages"></a>二、绑定域名和github pages</h2><p>仓库下面的<code>settings</code></p>
+<p>刚开始没有custom pages这个选项，提示被禁用，是因为没有内容。点击下面的Choose a theme按钮，选择一个主题后，在就可以了</p>
+<a id="more"></a>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601181041.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584967333079.png" alt=""></p>
+<h2 id="三、安装hexo"><a href="#三、安装hexo" class="headerlink" title="三、安装hexo"></a>三、安装hexo</h2><p>1、全局安装hexo-cli指令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>查看hexo版本</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>2、初始化hexo</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019333586.png" alt=""></p>
+<p>初始化可能报错：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601144459.png" alt=""></p>
+<p>继续报错：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601144630.png" alt=""></p>
+<p>3、开始体验hexo</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>生成静态文件到public文件夹，没有public文件夹就会自动创建，如果有了就会覆盖public内容。</p>
+<p>public文件夹的内容是要提交到github上的。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019420342.png" alt=""></p>
+<p>4、开启本地服务</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容，很多人会碰到浏览器一直在转圈但是就是加载不出来的问题，一般情况下是因为端口占用的缘故，因为4000这个端口太常见了，解决端口冲突问题。</p>
+<p>可以切换端口：<code>hexo s -p</code>+端口</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601150457.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019505505.png" alt=""></p>
+<h2 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h2><p>before（默认主题）</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584976473631.png" alt=""></p>
+<p>after</p>
+<ol>
+<li>hexo-theme-yilia-plus主题</li>
+</ol>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584976397933.png" alt=""></p>
+<h2 id="五、关联hexo和github-page"><a href="#五、关联hexo和github-page" class="headerlink" title="五、关联hexo和github page"></a>五、关联hexo和github page</h2><p><strong>ssh更换电脑还是一样的吗？</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601181931.png" alt=""></p>
+<p>1、配置SSH key</p>
+<p>如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到</p>
+<p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd ~&#x2F;. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017243682.png" alt=""></p>
+<p>提示这个错误，是因为/后边的路径或者变量名有空格，那就需要加双引号</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017331912.png" alt=""></p>
+<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮箱&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017379401.png" alt=""></p>
+<p> 打开用户目录，找到<code>.ssh\id_rsa.pub</code>文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
+<p>刚复制的内容粘贴到key那里，title随便填，保存。 </p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017461062.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017906555.png" alt=""></p>
+<p>测试一下是否成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585018015424.png" alt=""></p>
+<p>看到这个信息说明SSH已配置成功！</p>
+<p>2、设置Git的user name和email</p>
+<p>3、配置deployment</p>
+<p>错的repository写法</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584978594242.png" alt=""></p>
+<p>问题：不能Permission denied —-要设置ssh</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584981806231.png" alt=""></p>
+<p>部署前项目的内容：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585018935914.png" alt=""></p>
+<p>部署后，代码已经更新</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585021099021.png" alt=""></p>
+<p>然后再更新GitHub Pages</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585026520993.png" alt=""></p>
+<p>配置<code>_config.yml</code>中有关deploy的部分：</p>
+<p>正确写法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:saucxs&#x2F;saucxs.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>错误写法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: github</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;saucxs&#x2F;saucxs.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>后面一种写法是hexo2.x的写法，现在已经不行了，无论是哪种写法，此时直接执行<code>hexo d</code>的话一般会报如下错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Deployer not found: github 或者 Deployer not found: git</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019792689.png" alt=""></p>
+<p>需要安装一个插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>再次输入hexo d，就ok了。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/444.png" alt=""></p>
+<h2 id="修改文件后："><a href="#修改文件后：" class="headerlink" title="修改文件后："></a>修改文件后：</h2><p>打开是404，而且GitHub Pages下面的custom domain配置项也会被清空</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585028379484.png" alt=""></p>
+<p>要在source 目录添加一个新文件CNAME，内容写上域名</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585029863643.png" alt=""></p>
+<p>修改文件，上传到github上</p>
+<p>在GitHub_Blog文件下，执行命令(建议每次都按照如下步骤部署)：</p>
+<blockquote>
+<p>hexo clean   //清除缓存和已生成的静态文件<br>hexo generate   //构建，生成页面<br>hexo deploy   //部署</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客 -博客搭建</category>
       </categories>
   </entry>
   <entry>
-    <title>一台电脑管理多个github账号</title>
-    <url>/2020/06/07/%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2020/06/04/test/</url>
-    <content><![CDATA[<blockquote>
-<p><font color="ff0000">版权声明：本文为原创，欢迎转载，转载请注明出处，勿用于商业用途！</font></p>
-</blockquote>
-<p>&emsp;&emsp;答自己：<br>想想自己的腿，如果明天<br>姑娘的腿，还没我的腿好看，还没我的细，还没我的白<br>走路的风姿也不够我风骚妖娆<br>我拜腿？我拜个屁！我看腿？我看个屁<br>我自己的更好看，更舒服，更白细<br>&emsp;&emsp;怀抱着这样的心态修炼？<br>CC德六字真言：真好，真细，真白<br>摸了摸自己的腿，指日可待<br>这个世界，自己好玩，更重要<br>&emsp;&emsp;自己的好玩比男女朋友好玩，更重要！<font color="ff0000"> ; </font></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo博客优化</title>
-    <url>/2020/05/30/hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</url>
+    <url>/2020/06/07/hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[<p>hexo下文章的排版如何优化：宽度，字体，图片大小</p>
 <p>图片太大</p>
 <p>自定义url，默认的是<code>/发表日期/标题</code></p>
@@ -212,37 +308,106 @@
 <p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200530175739.png" alt=""></p>
 ]]></content>
       <categories>
+        <category>博客 -博客优化</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>天猫618弹窗关闭</title>
+    <url>/2020/06/07/%E5%A4%A9%E7%8C%AB618%E5%BC%B9%E7%AA%97%E5%85%B3%E9%97%AD/</url>
+    <content><![CDATA[<p>临近电商大促，这些弹窗就多了起来。我已经很久没看到广告弹窗了，因为用了火绒来拦截弹窗，效果还不错。这是一个天猫活动弹窗，火绒居然没有拦截。还好这个弹窗没那么流氓，是直接按退出就真是退出了，不会跳转到浏览器打开网页。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%B9%E7%AA%97.gif" alt=""></p>
+<a id="more"></a>
+
+<p>1.基本方法</p>
+<p>天猫618弹窗时先不要关掉，按Ctrl+Alt+Delete,打开资源管理器，能看到弹窗进程：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210618.png" alt=""></p>
+<p>右键，点开属性，可以看到安装位置：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603210814.png" alt=""></p>
+<p>居然是搜狗输入法的弹窗，吃香很难看啊。打开<code>SogouInput\9.3.0.3129</code>目录，找到<code>ShowInfo.exe</code>，删除</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200603211233.png" alt=""></p>
+<p>2.进阶方法</p>
+<p>如果上述方法无效，则尝试以下方法：</p>
+<p>Windows Defender 防火墙&gt;&gt;高级设置，然后配置入站规则。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604112915.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%A5%E7%AB%99%E8%A7%84%E5%88%99.gif" alt=""></p>
+<p>重启即可。</p>
+<p>3.如果上述方法都不行，只能出杀手锏了。</p>
+<p>创建一个TXT里面随便写东西，改成同样的文件名<code>ShowInfo.exe</code>，替换掉原版，修改属性为只读不可写入。因为不可写入所以输入法没法联网更新这个文件，而下载新文件也会由于重复名称失败。右键属性，常规只读，然后点安全，编辑，everyone,拒绝打勾。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130021.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200604130824.png" alt=""></p>
+<p>成功！</p>
+]]></content>
+      <categories>
         <category>小妙招</category>
       </categories>
   </entry>
   <entry>
-    <title>阿里云图床</title>
-    <url>/2020/04/26/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
-<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
-<p><img src="" alt="">   ctrl+shift+i</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
-<ol>
-<li>用自己的域名访问，也就是需要cname</li>
-<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
-</ol>
-<a id="more"></a>
-
-<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
-<ol>
-<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
-<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
-</ol>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
-<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
-<p>简言之，需要备案&gt;&gt;购买服务器</p>
+    <title>一台电脑管理多个github账号</title>
+    <url>/2020/06/07/%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>hexo在多台电脑提交和更新github pages博客</title>
+    <url>/2020/06/07/hexo%E5%9C%A8%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E6%8F%90%E4%BA%A4%E5%92%8C%E6%9B%B4%E6%96%B0github%20pages%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>本来在家里搭建了自己的博客，然后有时候在公司电脑想提交更新博客，搜集相关资料，总结如下方法。</p>
+<blockquote>
+<p>主要思路：利用git分支实现</p>
+<p>hexo生成的静态博客文件默认放在master分支上。</p>
+<p>hexo的源文件（部署环境文件）可以都放在hexo分支上（可以新创建一个hexo分支），换新电脑时，直接<code>git clone hexo分支地址</code>即可。</p>
+</blockquote>
+<h3 id="一、hexo搭建博客原理"><a href="#一、hexo搭建博客原理" class="headerlink" title="一、hexo搭建博客原理"></a>一、hexo搭建博客原理</h3><p>hexo博客的部署环境目录：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607102918.png" alt=""></p>
+<p>hexo博客的目录结构解析：</p>
+<p>![](<a href="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2859254-8ac27ff2282797b0" target="_blank" rel="noopener">https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2859254-8ac27ff2282797b0</a> (1).jpg)</p>
+<p>上传到github( master)的文件是这些：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607103129.png" alt=""></p>
+<blockquote>
+<p>1.hexo帮助把博客发送到github，同时把md文件转换成网页文件。</p>
+<p>2.hexo目录下的文件和github上的文件是不同的，public文件夹的文件通过hexo d 上传到github去了，其他的文件则留在本地目录下。</p>
+</blockquote>
+<h3 id="二、家里电脑上的操作"><a href="#二、家里电脑上的操作" class="headerlink" title="二、家里电脑上的操作"></a>二、家里电脑上的操作</h3><h4 id="1-对username-github-io仓库新建hexo分支，并克隆"><a href="#1-对username-github-io仓库新建hexo分支，并克隆" class="headerlink" title="1.对username.github.io仓库新建hexo分支，并克隆"></a>1.对username.github.io仓库新建hexo分支，并克隆</h4><blockquote>
+<p>(1)在Github的username.github.io仓库上新建一个xxx分支，并切换到该分支</p>
+<p>(2)该仓库-&gt;Settings-&gt;Branches-&gt;Default branch中将默认分支设为xxx，update保存；</p>
+<p>(3)将该仓库克隆到本地，进入该username.github.io文件目录。</p>
+</blockquote>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607004035.png" alt=""></p>
+<p>完成上面步骤后，在当前目录使用Git Bash执行<code>git branch</code>命令查看当前所在分支，应为新建的分支xxx：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607005547.png" alt=""></p>
+<h4 id="2-将家里电脑博客的部署文件拷贝进新克隆的分支username-github-io文件目录"><a href="#2-将家里电脑博客的部署文件拷贝进新克隆的分支username-github-io文件目录" class="headerlink" title="2.将家里电脑博客的部署文件拷贝进新克隆的分支username.github.io文件目录"></a>2.将家里电脑博客的部署文件拷贝进新克隆的分支username.github.io文件目录</h4><p>先将本地博客的部署文件（<strong>Hexo目录下的全部文件</strong>，modules等文件可不用）全部拷贝进username.github.io文件目录中去。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607095349.png" alt=""></p>
+<p>接下来，进入username.github.io文件目录下，将该目录下的全部文件提交到xxx分支，提交之前需注意：</p>
+<blockquote>
+<ul>
+<li>将themes目录以内中的主题的.git目录删除（如果有），因为一个git仓库中不能包含另一个git仓库，提交主题文件夹会失败。</li>
+<li>可能有人会问，删除了themes目录中的.git不就不能<code>git pull</code>更新主题了吗，很简单，需要更新主题时在另一个地方<code>git clone</code>下来该主题的最新版本，然后将内容拷到当前主题目录即可</li>
+</ul>
+</blockquote>
+<h4 id="3-提交hexo分支"><a href="#3-提交hexo分支" class="headerlink" title="3.提交hexo分支"></a>3.提交hexo分支</h4><p>依次执行以下代码，即可将博客的hexo部署环境提交到GitHub个人仓库的xxx分支。</p>
+<blockquote>
+<p>(1)git add .</p>
+<p>(2)git commit -m ‘hexo’ （引号内容可改）</p>
+<p>(3)git push</p>
+</blockquote>
+<p>分支上的内容已经更新了：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607100142.png" alt=""></p>
+<p>master分支和xxx分支各自保存着一个版本，master分支用于保存博客静态资源，提供博客页面供人访问；xxx分支用于备份博客部署文件，供自己维护更新，两者在一个GitHub仓库内互不冲突，完美！</p>
+<h3 id="三、公司电脑上的操作"><a href="#三、公司电脑上的操作" class="headerlink" title="三、公司电脑上的操作"></a>三、公司电脑上的操作</h3><p>至此，你的博客已经可以在其他电脑上进行同步的维护和更新了，方法很简单：</p>
+<blockquote>
+<p>将新电脑的生成的ssh key添加到GitHub账户上</p>
+<p>在新电脑上克隆username.github.io仓库的xxx分支到本地，此时本地git仓库处于xxx分支</p>
+<p>切换到username.github.io目录，执行<code>npm install</code>(由于仓库有一个.gitignore文件，里面默认是忽略掉  node_modules文件夹的，也就是说仓库的hexo分支并没有存储该目录[也不需要]，所以需要install下)</p>
+</blockquote>
+<p>到这里了就可以开始在自己的电脑上写博客了！</p>
+<blockquote>
+<p>编辑、撰写文章或其他博客更新改动</p>
+<p>依次执行<code>git add .</code>、<code>git commit -m &#39;hexo&#39;</code>（引号内容可改）、<code>git push</code>指令，保证xxx分支版本最新</p>
+<p>执行<code>hexo d -g</code>指令（在此之前，有时可能需要执行<code>hexo clean</code>），完成后就会发现，最新改动已经更新到master分支了，两个分支互不干扰！</p>
+</blockquote>
+<h3 id="四、回到家里电脑更新并提交博客"><a href="#四、回到家里电脑更新并提交博客" class="headerlink" title="四、回到家里电脑更新并提交博客"></a>四、回到家里电脑更新并提交博客</h3><p><strong>注意： 每次换电脑进行博客更新时，不管上次在其他电脑有没有更新，最好先<code>git pull</code></strong></p>
 ]]></content>
       <categories>
-        <category>搭建博客</category>
+        <category>博客 -博客更新维护</category>
       </categories>
-      <tags>
-        <tag>图床</tag>
-      </tags>
   </entry>
   <entry>
     <title>trojan教程</title>
@@ -423,116 +588,5 @@
       <tags>
         <tag>上网</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>搭建个人博客</title>
-    <url>/2020/03/23/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>估计要注册一个新的github账号对应一个新的域名博客</p>
-<h2 id="一、阿里云域名解析"><a href="#一、阿里云域名解析" class="headerlink" title="一、阿里云域名解析"></a>一、阿里云域名解析</h2><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584967236238.png" alt=""></p>
-<h2 id="二、绑定域名和github-pages"><a href="#二、绑定域名和github-pages" class="headerlink" title="二、绑定域名和github pages"></a>二、绑定域名和github pages</h2><p>仓库下面的<code>settings</code></p>
-<p>刚开始没有custom pages这个选项，提示被禁用，是因为没有内容。点击下面的Choose a theme按钮，选择一个主题后，在就可以了</p>
-<a id="more"></a>
-
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601181041.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584967333079.png" alt=""></p>
-<h2 id="三、安装hexo"><a href="#三、安装hexo" class="headerlink" title="三、安装hexo"></a>三、安装hexo</h2><p>1、全局安装hexo-cli指令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<p>查看hexo版本</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p>2、初始化hexo</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019333586.png" alt=""></p>
-<p>初始化可能报错：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601144459.png" alt=""></p>
-<p>继续报错：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601144630.png" alt=""></p>
-<p>3、开始体验hexo</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>生成静态文件到public文件夹，没有public文件夹就会自动创建，如果有了就会覆盖public内容。</p>
-<p>public文件夹的内容是要提交到github上的。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019420342.png" alt=""></p>
-<p>4、开启本地服务</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容，很多人会碰到浏览器一直在转圈但是就是加载不出来的问题，一般情况下是因为端口占用的缘故，因为4000这个端口太常见了，解决端口冲突问题。</p>
-<p>可以切换端口：<code>hexo s -p</code>+端口</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601150457.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019505505.png" alt=""></p>
-<h2 id="四、更换主题"><a href="#四、更换主题" class="headerlink" title="四、更换主题"></a>四、更换主题</h2><p>before（默认主题）</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584976473631.png" alt=""></p>
-<p>after</p>
-<ol>
-<li>hexo-theme-yilia-plus主题</li>
-</ol>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584976397933.png" alt=""></p>
-<h2 id="五、关联hexo和github-page"><a href="#五、关联hexo和github-page" class="headerlink" title="五、关联hexo和github page"></a>五、关联hexo和github page</h2><p><strong>ssh更换电脑还是一样的吗？</strong></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200601181931.png" alt=""></p>
-<p>1、配置SSH key</p>
-<p>如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到</p>
-<p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd ~&#x2F;. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017243682.png" alt=""></p>
-<p>提示这个错误，是因为/后边的路径或者变量名有空格，那就需要加双引号</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017331912.png" alt=""></p>
-<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮箱&quot;</span><br></pre></td></tr></table></figure>
-
-<p>然后连续3次回车，最终会生成一个文件在用户目录下，</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017379401.png" alt=""></p>
-<p> 打开用户目录，找到<code>.ssh\id_rsa.pub</code>文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
-<p>刚复制的内容粘贴到key那里，title随便填，保存。 </p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017461062.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585017906555.png" alt=""></p>
-<p>测试一下是否成功</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585018015424.png" alt=""></p>
-<p>看到这个信息说明SSH已配置成功！</p>
-<p>2、设置Git的user name和email</p>
-<p>3、配置deployment</p>
-<p>错的repository写法</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584978594242.png" alt=""></p>
-<p>问题：不能Permission denied —-要设置ssh</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1584981806231.png" alt=""></p>
-<p>部署前项目的内容：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585018935914.png" alt=""></p>
-<p>部署后，代码已经更新</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585021099021.png" alt=""></p>
-<p>然后再更新GitHub Pages</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585026520993.png" alt=""></p>
-<p>配置<code>_config.yml</code>中有关deploy的部分：</p>
-<p>正确写法：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:saucxs&#x2F;saucxs.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<p>错误写法：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: github</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;saucxs&#x2F;saucxs.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<p>后面一种写法是hexo2.x的写法，现在已经不行了，无论是哪种写法，此时直接执行<code>hexo d</code>的话一般会报如下错误：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Deployer not found: github 或者 Deployer not found: git</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585019792689.png" alt=""></p>
-<p>需要安装一个插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>再次输入hexo d，就ok了。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/444.png" alt=""></p>
-<h2 id="修改文件后："><a href="#修改文件后：" class="headerlink" title="修改文件后："></a>修改文件后：</h2><p>打开是404，而且GitHub Pages下面的custom domain配置项也会被清空</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585028379484.png" alt=""></p>
-<p>要在source 目录添加一个新文件CNAME，内容写上域名</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1585029863643.png" alt=""></p>
-<p>修改文件，上传到github上</p>
-<p>在GitHub_Blog文件下，执行命令(建议每次都按照如下步骤部署)：</p>
-<blockquote>
-<p>hexo clean   //清除缓存和已生成的静态文件<br>hexo generate   //构建，生成页面<br>hexo deploy   //部署</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>搭建博客</category>
-      </categories>
   </entry>
 </search>
