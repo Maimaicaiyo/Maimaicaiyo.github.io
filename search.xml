@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>通过码云下载github项目</title>
+    <url>/2020/06/07/%E9%80%9A%E8%BF%87%E7%A0%81%E4%BA%91%E4%B8%8B%E8%BD%BDgithub%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>国内从github下载代码速度是大概是20k/s，太耽搁时间了。这里利用码云，下载github代码速度大大提升。</p>
+<p><strong><a href="https://gitee.com/" target="_blank" rel="noopener">码云</a></strong></p>
+<h4 id="1-打开码云，选择“从github-gitlab导入仓库”"><a href="#1-打开码云，选择“从github-gitlab导入仓库”" class="headerlink" title="1.打开码云，选择“从github/gitlab导入仓库”"></a>1.打开码云，选择“从github/gitlab导入仓库”</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607203344.png" alt=""></p>
+<a id="more"></a>
+
+<h4 id="2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"><a href="#2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。" class="headerlink" title="2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"></a>2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1591534093567.png" alt=""></p>
+<h4 id="3-点击下载-gt-粘贴url-gt-git-clone-链接"><a href="#3-点击下载-gt-粘贴url-gt-git-clone-链接" class="headerlink" title="3.点击下载&gt;粘贴url&gt;git clone 链接"></a>3.点击<code>下载</code>&gt;<code>粘贴url</code>&gt;<code>git clone 链接</code></h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210441.png" alt=""></p>
+<p><strong>这样下载的代码是master的。</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607215601.png" alt=""></p>
+<p>这里我想下载hexo分支代码。</p>
+<p><strong>注意：直接切换到hexo分支，下载的代码也是master的。这时要hexo设置为默认分支，这样下的代码才是hexo分支里面的。管理&gt;选择分支&gt;设为默认分支。</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210826.png" alt=""></p>
+<p>设为默认分支：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211006.png" alt=""></p>
+<p>下载的是hexo分支内容：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211526.png" alt=""></p>
+<p>下载的速度翻了几十倍，奥利给！</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607220728.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+  </entry>
+  <entry>
     <title>阿里云图床</title>
     <url>/2020/06/07/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
     <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
