@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>通过码云下载github项目</title>
+    <url>/2020/06/07/%E9%80%9A%E8%BF%87%E7%A0%81%E4%BA%91%E4%B8%8B%E8%BD%BDgithub%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>国内从github下载代码速度是大概是20k/s，太耽搁时间了。这里利用码云，下载github代码速度大大提升。</p>
+<p><font color='blue'><a href="https://gitee.com/" target="_blank" rel="noopener">码云</a></font> <a href="https://gitee.com/" target="_blank" rel="noopener">https://gitee.com/</a></p>
+<a id="more"></a>
+
+<h4 id="1-打开码云，选择“从github-gitlab导入仓库”"><a href="#1-打开码云，选择“从github-gitlab导入仓库”" class="headerlink" title="1.打开码云，选择“从github/gitlab导入仓库”"></a>1.打开码云，选择“从github/gitlab导入仓库”</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607203344.png" alt=""></p>
+<h4 id="2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"><a href="#2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。" class="headerlink" title="2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"></a>2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1591534093567.png" alt=""></p>
+<h4 id="3-点击下载-gt-粘贴url-gt-git-clone-链接"><a href="#3-点击下载-gt-粘贴url-gt-git-clone-链接" class="headerlink" title="3.点击下载&gt;粘贴url&gt;git clone 链接"></a>3.点击<code>下载</code>&gt;<code>粘贴url</code>&gt;<code>git clone 链接</code></h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210441.png" alt=""></p>
+<p><strong>这样下载的代码是master的。</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607215601.png" alt=""></p>
+<p>这里我想下载hexo分支代码。</p>
+<p><strong>注意：直接切换到hexo分支，下载的代码也是master的。这时要hexo设置为默认分支，这样下的代码才是hexo分支里面的。管理&gt;选择分支&gt;设为默认分支。</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210826.png" alt=""></p>
+<p>设为默认分支：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211006.png" alt=""></p>
+<p>下载的是hexo分支内容：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211526.png" alt=""></p>
+<p>下载的速度翻了几十倍，奥利给！</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607220728.png" alt=""></p>
+<p>总结：设置谁为默认分支（default），git clone的就是谁的代码。github也一样。</p>
+]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>阿里云图床</title>
+    <url>/2020/06/07/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
+<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
+<p><img src="" alt="">   ctrl+shift+i</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
+<ol>
+<li>用自己的域名访问，也就是需要cname</li>
+<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
+</ol>
+<a id="more"></a>
+
+<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
+<ol>
+<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
+<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
+</ol>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
+<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
+<p>简言之，需要备案&gt;&gt;购买服务器</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+        <category>优化</category>
+      </categories>
+  </entry>
+  <entry>
     <title>trojan教程</title>
     <url>/2020/06/07/trojan%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<ul>
-<li><a href="https://yizhihongxing.network/index.html#home" target="_blank" rel="noopener">一枝红杏</a></li>
-<li><a href="https://yizhihongxing.network/index.html#services" target="_blank" rel="noopener">服务优势</a></li>
-<li><a href="https://yizhihongxing.network/index.html#features" target="_blank" rel="noopener">产品特性</a></li>
-<li><a href="https://yizhihongxing.network/index.html#pricing" target="_blank" rel="noopener">价格</a></li>
-<li><a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=14" target="_blank" rel="noopener">客户中心</a></li>
-</ul>
-<p><a href="https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&amp;id=14#" target="_blank" rel="noopener">https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&amp;id=14#</a>)</p>
-<h2 id="一、【Windows】【推荐】-Trojan-QT5-设置方法"><a href="#一、【Windows】【推荐】-Trojan-QT5-设置方法" class="headerlink" title="一、【Windows】【推荐】 Trojan-QT5 设置方法"></a>一、【Windows】【推荐】 Trojan-QT5 设置方法</h2><p><strong>本文导入配置文件适用于 V0.04a 以上客户端（帮助 &gt; 关于 查看客户端版本号）**</strong>目前客户端流量统计功能无法正常工作，显示用量 0 是正常的<strong>**教程对应的服务版本为： Trojan 服务</strong></p>
+    <content><![CDATA[<h2 id="一、【Windows】【推荐】-Trojan-QT5-设置方法"><a href="#一、【Windows】【推荐】-Trojan-QT5-设置方法" class="headerlink" title="一、【Windows】【推荐】 Trojan-QT5 设置方法"></a>一、【Windows】【推荐】 Trojan-QT5 设置方法</h2><p><strong>本文导入配置文件适用于 V0.04a 以上客户端（帮助 &gt; 关于 查看客户端版本号）**</strong>目前客户端流量统计功能无法正常工作，显示用量 0 是正常的<strong>**教程对应的服务版本为： Trojan 服务</strong></p>
 <a id="more"></a>
 
 <h2 id="1-下载客户端"><a href="#1-下载客户端" class="headerlink" title="1. 下载客户端"></a>1. 下载客户端</h2><p>前往 技术支持 &gt; 资源下载 &gt; Trojan 进行下载： <a href="https://order.yizhihongxing.network/dl.php?type=d&id=19" target="_blank" rel="noopener">Trojan-QT5 Windows 客户端(点击下载)</a></p>
@@ -146,62 +192,9 @@
 <p>打开服务详情页面，点击每个服务器右侧的二维码图标<img src="https://i.loli.net/2020/02/28/UcnN8TxykG3rlhD.png" alt="img">，然后点击“二维码”即可展示二维码。</p>
 <p>打开 Shadowrocket 应用，点击左上角的扫描二维码图标，扫描屏幕上的二维码即可添加。</p>
 <p>选择对应的服务器点击连接，同意 VPN 权限后即连接到互联网。</p>
-<h2 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h2><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/1.png" style="zoom:50%;" />
-
-<center>JP1</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2.png" style="zoom:50%;" />
-
-<center>JP2</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/3.png" style="zoom:50%;" />
-
-<center>JP3</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/4.png" style="zoom:50%;" />
-
-<center>JP4</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/5.png" style="zoom:50%;" />
-
-<center>JP5</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/6.png" style="zoom:50%;" />
-
-<center>JP6</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/7.png" style="zoom:50%;" />
-
-<center>US1</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/8.png" style="zoom:50%;" />
-
-<center>US2</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/9.png" style="zoom:50%;" />
-
-<center>US3</center>]]></content>
-      <categories>
-        <category>网络</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>阿里云图床</title>
-    <url>/2020/06/07/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
-<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
-<p><img src="" alt="">   ctrl+shift+i</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
-<ol>
-<li>用自己的域名访问，也就是需要cname</li>
-<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
-</ol>
-<a id="more"></a>
-
-<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
-<ol>
-<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
-<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
-</ol>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
-<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
-<p>简言之，需要备案&gt;&gt;购买服务器</p>
 ]]></content>
       <categories>
-        <category>博客</category>
-        <category>优化</category>
+        <category>网络</category>
       </categories>
   </entry>
   <entry>
@@ -679,33 +672,6 @@
       <categories>
         <category>博客</category>
         <category>优化</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>通过码云下载github项目</title>
-    <url>/2020/06/07/%E9%80%9A%E8%BF%87%E7%A0%81%E4%BA%91%E4%B8%8B%E8%BD%BDgithub%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>国内从github下载代码速度是大概是20k/s，太耽搁时间了。这里利用码云，下载github代码速度大大提升。</p>
-<p><font color='blue'><a href="https://gitee.com/" target="_blank" rel="noopener">码云</a></font> <a href="https://gitee.com/" target="_blank" rel="noopener">https://gitee.com/</a></p>
-<a id="more"></a>
-
-<h4 id="1-打开码云，选择“从github-gitlab导入仓库”"><a href="#1-打开码云，选择“从github-gitlab导入仓库”" class="headerlink" title="1.打开码云，选择“从github/gitlab导入仓库”"></a>1.打开码云，选择“从github/gitlab导入仓库”</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607203344.png" alt=""></p>
-<h4 id="2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"><a href="#2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。" class="headerlink" title="2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"></a>2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1591534093567.png" alt=""></p>
-<h4 id="3-点击下载-gt-粘贴url-gt-git-clone-链接"><a href="#3-点击下载-gt-粘贴url-gt-git-clone-链接" class="headerlink" title="3.点击下载&gt;粘贴url&gt;git clone 链接"></a>3.点击<code>下载</code>&gt;<code>粘贴url</code>&gt;<code>git clone 链接</code></h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210441.png" alt=""></p>
-<p><strong>这样下载的代码是master的。</strong></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607215601.png" alt=""></p>
-<p>这里我想下载hexo分支代码。</p>
-<p><strong>注意：直接切换到hexo分支，下载的代码也是master的。这时要hexo设置为默认分支，这样下的代码才是hexo分支里面的。管理&gt;选择分支&gt;设为默认分支。</strong></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210826.png" alt=""></p>
-<p>设为默认分支：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211006.png" alt=""></p>
-<p>下载的是hexo分支内容：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211526.png" alt=""></p>
-<p>下载的速度翻了几十倍，奥利给！</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607220728.png" alt=""></p>
-<p>总结：设置谁为默认分支（default），git clone的就是谁的代码。github也一样。</p>
-]]></content>
-      <categories>
-        <category>github</category>
       </categories>
   </entry>
 </search>
