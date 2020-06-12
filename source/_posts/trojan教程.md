@@ -5,14 +5,6 @@ categories:
 
 
 
-- [一枝红杏](https://yizhihongxing.network/index.html#home)
-- [服务优势](https://yizhihongxing.network/index.html#services)
-- [产品特性](https://yizhihongxing.network/index.html#features)
-- [价格](https://yizhihongxing.network/index.html#pricing)
-- [客户中心](https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=14)
-
-https://order.yizhihongxing.network/knowledgebase.php?action=displayarticle&id=14#)
-
 ## 一、【Windows】【推荐】 Trojan-QT5 设置方法
 
 **本文导入配置文件适用于 V0.04a 以上客户端（帮助 > 关于 查看客户端版本号）****目前客户端流量统计功能无法正常工作，显示用量 0 是正常的****教程对应的服务版本为： Trojan 服务**
@@ -323,36 +315,3 @@ Shadowrocket 可以直接通过扫码的方式进行添加，或是按照下面�
 
 选择对应的服务器点击连接，同意 VPN 权限后即连接到互联网。
 
-
-
-
-
-## 节点
-
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/1.png" style="zoom:50%;" />
-
-<center>JP1</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/2.png" style="zoom:50%;" />
-
-<center>JP2</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/3.png" style="zoom:50%;" />
-
-<center>JP3</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/4.png" style="zoom:50%;" />
-
-<center>JP4</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/5.png" style="zoom:50%;" />
-
-<center>JP5</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/6.png" style="zoom:50%;" />
-
-<center>JP6</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/7.png" style="zoom:50%;" />
-
-<center>US1</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/8.png" style="zoom:50%;" />
-
-<center>US2</center>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/9.png" style="zoom:50%;" />
-
-<center>US3</center>

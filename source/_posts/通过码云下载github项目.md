@@ -7,13 +7,13 @@ categories:
 
 国内从github下载代码速度是大概是20k/s，太耽搁时间了。这里利用码云，下载github代码速度大大提升。
 
-**[码云](https://gitee.com/)**
+<font color='blue'>[码云](https://gitee.com/)</font> https://gitee.com/
+
+<!--more-->
 
 #### 1.打开码云，选择“从github/gitlab导入仓库”
 
 ![](https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/20200607203344.png)
-
-<!--more-->
 
 #### 2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。
 
@@ -47,3 +47,4 @@ categories:
 
 
 
+总结：设置谁为默认分支（default），git clone的就是谁的代码。github也一样。
