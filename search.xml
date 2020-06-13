@@ -1,207 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>阿里云欠费</title>
-    <url>/2020/06/13/%E9%98%BF%E9%87%8C%E4%BA%91%E6%AC%A0%E8%B4%B9/</url>
-    <content><![CDATA[<p>早上阿里云一条信息说我欠费0.04元，一脸懵逼。</p>
-<h3 id="查明欠费原因"><a href="#查明欠费原因" class="headerlink" title="查明欠费原因"></a>查明欠费原因</h3><p>查询网站：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613151951.png" alt=""></p>
-<a id="more"></a>
-
-<p>不是买了半年共40G流量包嘛，怎么还会欠费！</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613153205.png" alt=""></p>
-<p>原来OSS服务包括<a href="https://help.aliyun.com/document_detail/59636.html#section-uz2-m2t-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">存储费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-gcg-nqt-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">流量费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-msh-3st-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">请求费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-ykd-nst-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">数据处理费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-jyl-k2h-g2f?_from=help_widget_anchor" target="_blank" rel="noopener">对象标签费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-dxe-pq2-8bw?_from=help_widget_anchor" target="_blank" rel="noopener">传输加速费用</a>。OSS（Open Storage Service）是支持任意数据类型的存储服务，支持任意时间、地点的数据上传和下载，OSS中每个存储对象（object）由名称、内容、描述三部分组成。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613152413.png" alt=""></p>
-<p>而我购买的只是标准存储包。应该是其它服务扣费了。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613144237.png" alt=""></p>
-<p>后付费账单都是没有购买资源包的。我这里应该是外网流出费用。外网流出费用：通过互联网从 OSS 浏览数据或下载数据到本地端所产生的流量。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613153904.png" alt=""></p>
-<h3 id="查询扣费明细"><a href="#查询扣费明细" class="headerlink" title="查询扣费明细"></a>查询扣费明细</h3><p>链接：<a href="https://www.aliyun.com/price/product" target="_blank" rel="noopener">阿里云定价_云产品价格</a></p>
-<p>我这里应该涉及的是流量费用和请求费用。其中请求费用几乎可以忽略。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613161047.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613161455.png" alt=""></p>
-<p>在<strong>消费总览</strong>页中，可以看到一列叫做“抹零优惠”的数字。</p>
-<p>对于后付费服务，阿里云计算原价、折扣金额和优惠券抵扣金额时，精确到3位小数。当进行实际结算时，阿里云会自动将3位小数截尾为2位小数。这部分被截尾抹零的总金额称作“抹零优惠”。</p>
-<p>应该是这里的0.04元！</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613161901.png" alt=""></p>
-<p><strong>特别提醒：当有欠费提醒时，及时处理，避免因欠费被停了服务甚至被删除数据</strong></p>
-]]></content>
-      <categories>
-        <category>阿里云</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>黑苹果安装</title>
-    <url>/2020/06/11/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>最近想体验一把苹果仔的快乐，搞一波虚拟机，无奈虚拟机对AMD特别不友好，新建虚拟机有很多问题，最后也没搞定（手动狗头）。对苹果的念想愈加强烈，只能施加于黑苹果了。</p>
-<p>温馨提示：进去安装苹果的界面，用的是手机拍照，比电脑截图要模糊一点。第一次装是以OC引导的。</p>
-<a id="more"></a>
-
-<p>电脑配置：</p>
-<blockquote>
-<p>CPU：AMD Ryzen 5 2600 六核</p>
-<p>主板：微星 B350M</p>
-</blockquote>
-<p>相关网站：</p>
-<blockquote>
-<ul>
-<li>B站   <a href="https://www.bilibili.com/" target="_blank" rel="noopener">https://www.bilibili.com/</a></li>
-<li>远景论坛   <a href="http://bbs.pcbeta.com/" target="_blank" rel="noopener">http://bbs.pcbeta.com/</a></li>
-<li>黑果小兵的部落阁   <a href="https://blog.daliansky.net/" target="_blank" rel="noopener">https://blog.daliansky.net/</a></li>
-<li>黑苹果屋   <a href="http://imacos.top/" target="_blank" rel="noopener">http://imacos.top/</a>   <a href="http://imacos.top/2019/08/01/0914/" target="_blank" rel="noopener">http://imacos.top/2019/08/01/0914/</a></li>
-<li>黑苹果社区   <a href="https://osx.cx/" target="_blank" rel="noopener">https://osx.cx/</a></li>
-</ul>
-</blockquote>
-<p>参考文章：</p>
-<blockquote>
-<p><a href="https://blog.csdn.net/qq_28735663/article/details/99695786" target="_blank" rel="noopener">https://blog.csdn.net/qq_28735663/article/details/99695786</a></p>
-<p><a href="https://blog.csdn.net/weixin_43627371/article/details/104473163" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43627371/article/details/104473163</a></p>
-<p><a href="https://www.jianshu.com/p/81e329c50120" target="_blank" rel="noopener">https://www.jianshu.com/p/81e329c50120</a></p>
-<p><a href="http://imacos.top/2019/08/01/0914/" target="_blank" rel="noopener">http://imacos.top/2019/08/01/0914/</a> </p>
-</blockquote>
-<p>黑苹果相关交流群：</p>
-<p>809418835,   159044520,   452980172,   237591564</p>
-<p>准备工具：</p>
-<blockquote>
-<ul>
-<li>16G以上U盘</li>
-<li>Mac镜像和EHI（EHI包括OC和CLOVER）</li>
-<li>balenaEtcher 软件（U盘写入工具，把Mac镜像写入U盘）</li>
-<li>DiskGenius（分区工具，能浏览管理ESP文件）</li>
-<li>EasyUEFI（管理UEFI）</li>
-</ul>
-</blockquote>
-<p>前面先把一个巨坑踩了，不然后面要哭:weary:。安装Mac过程中要抹盘，提示抹盘失败，是因为ESP空间不足，至少要200M。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_150913.jpg" alt=""></p>
-<p>奇怪！默认的ESP分区大小是98M，而最多只能调到100M，怎么才能搞到200M以上？？其它盘居然不可以分给它容量。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_225629.jpg" alt=""></p>
-<p>在百度搜索了相关内容和去q群请教别人，也搞不懂。固态盘里还有个MBR分区，里面没啥内容，好像没用，就把它删了。果然，最多可以分配230M了。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200612_000313.png" alt=""></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_072445.png" alt=""></p>
-<p>应该是固态盘对ESP，MBR有一定的限额，我的最多是230M。</p>
-<p>这下应该可以了吧。但之后进去抹盘还是提示失败。230M怎么还会失败呢。很多资料都说200M以上就可以了。</p>
-<p>是不是因为我抹盘的Mac系统装在机械盘，而ESP分区在固态盘？</p>
-<p>那我在机械盘新建一个ESP分区。结果是只有128M空间。无法满足抹盘条件。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200612_000103.png" alt=""></p>
-<p><strong>小结论：固态盘和机械盘都有固定的ESP容量（还没证实其他人的情况😩）</strong></p>
-<p>所以，应该在固态盘建ESP分区。ESP分区的EHI本来有一个Microsoft的引导文件了，应该跟它并列就行了。</p>
-<p>为了腾出固态盘的空间，整理一下以前安装在C盘的文件，转移到机械盘。这里可以使用电脑管家的软件搬家，还是挺方便的。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613031623.png" alt=""></p>
-<p>把下载的适合自己电脑的EHI文件下的boot和OC复制到EHI文件夹，和Microsoft文件并列，全部替换。注意这里只能用快捷键粘贴，Ctri+C复制，Ctrl+V粘贴。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_190300.png" alt=""></p>
-<p>总算解决了ESP的问题，之后抹盘就能成功了。巨坑踩完！</p>
-<h3 id="一、制作启动U盘"><a href="#一、制作启动U盘" class="headerlink" title="一、制作启动U盘"></a>一、制作启动U盘</h3><p>插入U盘，在balenaEtcher软件导入<code>.dmg</code>镜像文件，Flash（这将删除U盘上的所有文件，请做好备份）</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613022144.png" alt=""></p>
-<h3 id="二、配置OC引导驱动"><a href="#二、配置OC引导驱动" class="headerlink" title="二、配置OC引导驱动"></a>二、配置OC引导驱动</h3><p>1.打开分区工具DiskGenius，找到U盘上的ESP分区，删除自带的EFI文件。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613023159.png" alt=""></p>
-<p>2.把适合自己电脑EFI文件夹复制进去。这里只能用快捷键粘贴，Ctri+C复制，Ctrl+V粘贴。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613023541.png" alt=""></p>
-<p>以上两张图是网友的~</p>
-<h3 id="三、制作Mac系统盘"><a href="#三、制作Mac系统盘" class="headerlink" title="三、制作Mac系统盘"></a>三、制作Mac系统盘</h3><p>注意要分区出来安装黑苹果，也可以另外新买一个空白磁盘（土豪）😄</p>
-<p>我的固态盘只有120G，所以打算在机械盘分区出来装黑苹果。新建卷-不分配驱动号-不格式化，这样苹果系统盘就不会显示Win资源管理器上了。分配了200G</p>
-<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/IMG_20200610_225353.jpg"  />
-
-<p>开头已经踩了这个坑，这个200G没用。只能在固态盘装Mac系统了。经过文件迁移，凑了30G空间。而我只是体验一把苹果仔的快乐，足以。</p>
-<p>开始安装！</p>
-<h3 id="四、安装Mac系统"><a href="#四、安装Mac系统" class="headerlink" title="四、安装Mac系统"></a>四、安装Mac系统</h3><p>开机进入bios系统，设置U盘为第一启动项。</p>
-<p>留意屏幕变化，当出现这个画面，尽快按上下键选择，不然它过两秒就按默认的进去了。这里选择<code>Install macOS</code></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_221349.jpg" alt=""></p>
-<p>它来了！带着优雅和从容！</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_221414.jpg" alt=""></p>
-<p>选择磁盘管理</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_222046.jpg" alt=""></p>
-<p>现在抹盘成功！是一个32G的固态盘。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_181332.jpg" alt=""></p>
-<p>退出，选择安装Mac</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_181449.jpg" alt=""></p>
-<p>一路安装下去</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_183437.jpg" alt=""></p>
-<p>进入Mac桌面！苹果仔的快乐就是这么朴实无华且枯燥。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_202621.jpg" alt=""></p>
-<h3 id="五、更改为硬盘启动"><a href="#五、更改为硬盘启动" class="headerlink" title="五、更改为硬盘启动"></a>五、更改为硬盘启动</h3><p>U盘启动每次都要插U盘，不方便，需要更改为硬盘启动。已经装好Mac系统在固态盘了，只需要设置引导就可以。把对应的EHI文件复制过来。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_190300.png" alt=""></p>
-<h4 id="使用EasyUEFI引导工具："><a href="#使用EasyUEFI引导工具：" class="headerlink" title="使用EasyUEFI引导工具："></a>使用EasyUEFI引导工具：</h4><p>1.创建新项</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_190824.png" alt=""></p>
-<p>2.选好类型和改名字，点击浏览文件</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_191529.png" alt=""></p>
-<p>3.选择efi启动文件，我用的是OC引导</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_192006.png" alt=""></p>
-<p>4.调整Mac为第一启动项</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_192157.png" alt=""></p>
-<p>5.选择重启或者自动进入UEFI设置（BIOS）</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613035804.png" alt=""></p>
-<p>安装完毕！</p>
-<p>注意要进BIOS设置Mac为第一启动项，不进硬盘BBS这里选择Mac，上面的启动顺序没有Mac选项。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_232403__01.jpg" alt=""></p>
-<p><strong>奇怪的是，弄完Mac为第一启动项，BIOS退出保存。之后界面没有进入Window的选项。要想进去Windows，又得调它为第一启动项。还没弄明白……</strong></p>
-<h3 id="OC引导改为CLOVER引导"><a href="#OC引导改为CLOVER引导" class="headerlink" title="OC引导改为CLOVER引导"></a>OC引导改为CLOVER引导</h3><p>我想可能是OC引导的问题，所以要弄成CLOVER引导。</p>
-<p>直接把CLOVER的文件复制到EHI文件夹里。删除OC的文件。注意，更改了引导方式，要去EasyUEFI软件修改efi文件路径。</p>
-<h3 id="关于黑苹果驱动"><a href="#关于黑苹果驱动" class="headerlink" title="关于黑苹果驱动"></a>关于黑苹果驱动</h3><p>进入系统后，大部分驱动都有，只有声卡驱动没有。从网站<a href="http://imacos.top/2019/08/01/0914/" target="_blank" rel="noopener">http://imacos.top/2019/08/01/0914/</a> 下载并安装声卡驱动，但就是没声音。</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200612_234146.jpg" alt=""></p>
-<p>网上资料说通过软件<code>Clover Configurator</code>为CLOVER的<code>config.plist</code>文件注入id，设置id=3。从<a href="https://blog.daliansky.net/AppleALC-Supported-codecs.html" target="_blank" rel="noopener">https://blog.daliansky.net/AppleALC-Supported-codecs.html</a> 找到你的声卡对应的编码。我的声卡型号是892。</p>
-<p>但是设置后也没效果……</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200613_000526.jpg" alt=""></p>
-<p>待续……</p>
-]]></content>
-      <categories>
-        <category>黑苹果</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>通过码云下载github项目</title>
-    <url>/2020/06/07/%E9%80%9A%E8%BF%87%E7%A0%81%E4%BA%91%E4%B8%8B%E8%BD%BDgithub%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<p>国内从github下载代码速度是大概是20k/s，太耽搁时间了。这里利用码云，下载github代码速度大大提升。</p>
-<p><font color='blue'><a href="https://gitee.com/" target="_blank" rel="noopener">码云</a></font> <a href="https://gitee.com/" target="_blank" rel="noopener">https://gitee.com/</a></p>
-<a id="more"></a>
-
-<h4 id="1-打开码云，选择“从github-gitlab导入仓库”"><a href="#1-打开码云，选择“从github-gitlab导入仓库”" class="headerlink" title="1.打开码云，选择“从github/gitlab导入仓库”"></a>1.打开码云，选择“从github/gitlab导入仓库”</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607203344.png" alt=""></p>
-<h4 id="2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"><a href="#2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。" class="headerlink" title="2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"></a>2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1591534093567.png" alt=""></p>
-<h4 id="3-点击下载-gt-粘贴url-gt-git-clone-链接"><a href="#3-点击下载-gt-粘贴url-gt-git-clone-链接" class="headerlink" title="3.点击下载&gt;粘贴url&gt;git clone 链接"></a>3.点击<code>下载</code>&gt;<code>粘贴url</code>&gt;<code>git clone 链接</code></h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210441.png" alt=""></p>
-<p><strong>这样下载的代码是master的。</strong></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607215601.png" alt=""></p>
-<p>这里我想下载hexo分支代码。</p>
-<p><strong>注意：直接切换到hexo分支，下载的代码也是master的。这时要hexo设置为默认分支，这样下的代码才是hexo分支里面的。管理&gt;选择分支&gt;设为默认分支。</strong></p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210826.png" alt=""></p>
-<p>设为默认分支：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211006.png" alt=""></p>
-<p>下载的是hexo分支内容：</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211526.png" alt=""></p>
-<p>下载的速度翻了几十倍，奥利给！</p>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607220728.png" alt=""></p>
-<p>总结：设置谁为默认分支（default），git clone的就是谁的代码。github也一样。</p>
-]]></content>
-      <categories>
-        <category>github</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>阿里云图床</title>
-    <url>/2020/06/07/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
-<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
-<p><img src="" alt="">   ctrl+shift+i</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
-<ol>
-<li>用自己的域名访问，也就是需要cname</li>
-<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
-</ol>
-<a id="more"></a>
-
-<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
-<ol>
-<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
-<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
-</ol>
-<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
-<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
-<p>简言之，需要备案&gt;&gt;购买服务器</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-        <category>优化</category>
-      </categories>
-  </entry>
-  <entry>
     <title>trojan教程</title>
     <url>/2020/06/07/trojan%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="一、【Windows】【推荐】-Trojan-QT5-设置方法"><a href="#一、【Windows】【推荐】-Trojan-QT5-设置方法" class="headerlink" title="一、【Windows】【推荐】 Trojan-QT5 设置方法"></a>一、【Windows】【推荐】 Trojan-QT5 设置方法</h2><p><strong>本文导入配置文件适用于 V0.04a 以上客户端（帮助 &gt; 关于 查看客户端版本号）**</strong>目前客户端流量统计功能无法正常工作，显示用量 0 是正常的<strong>**教程对应的服务版本为： Trojan 服务</strong></p>
@@ -342,6 +141,33 @@
 ]]></content>
       <categories>
         <category>网络</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>阿里云图床</title>
+    <url>/2020/06/07/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>1.默认的读写权限“私有”改为“公共读”</p>
+<p>2.使用 OSS 默认域名访问 html、图片资源，会有以附件形式下载的情况</p>
+<p><img src="" alt="">   ctrl+shift+i</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.gif" alt=""></h3><p>有两个条件必须具备的：</p>
+<ol>
+<li>用自己的域名访问，也就是需要cname</li>
+<li>文件的Content-Type是否设置正确了，如果是application/oct-stream那肯定是下载的。</li>
+</ol>
+<a id="more"></a>
+
+<p>您好，请您用一个自定义域名绑定OSS，并且解析到OSS的外网地址，然后这里用自定义域名，不要用OSS域名</p>
+<ol>
+<li>自定义域名绑定参考：<br><a href="https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/31902.html?spm=a2c4g.11174386.n2.3.79a07cbblWbnYl</a></li>
+<li>公告地址如下<br><a href="https://help.aliyun.com/noticelist/articleid/1060057906.html" target="_blank" rel="noopener">https://help.aliyun.com/noticelist/articleid/1060057906.html</a><br>【阿里云】【OSS】【升级通知】<br>升级时间：2019年9月23日00:00:00 (北京时间)<br>升级内容：出于安全考虑，从2019年9月23日起，针对之后新建的Bucket，直接使用OSS提供的默认域名，从互联网访问OSS上该Bucket的图片类型文件，即mimetype为以下值：<br>image/jpeg、image/gif、image/tiff、image/png、image/webp、image/svg+xml、image/bmp、image/x-ms-bmp、image/x-cmu-raster、image/exr、image/x-icon、image/heic，扩展名包括：jpg、jpeg、jpe、png、tif、tiff、gif、svg、bmp、ico、ras、dib、svgz、webp、bm、jfif、x-png、exr和heic时，Response Header中会自动加上 Content-Disposition:’attachment=filename;’。即从浏览器访问图片类型文件时，会以附件形式进行下载。<br>用户使用自有域名访问OSS的请求，Response Header中不会加上此信息。如何使用自有域名访问OSS，请参考OSS帮助文档“绑定自定义域名”。<br>注：2019年9月23日0点之前已创建的Bucket不在影响范围以内。</li>
+</ol>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/oss%E8%BD%AC%E5%88%B0%E4%B8%8B%E8%BD%BD.png" alt=""></p>
+<p>在阿里云进行域名备案，需要购买阿里云的服务器，并根据服务器种类来选择对应的产品验证方式</p>
+<p>简言之，需要备案&gt;&gt;购买服务器</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+        <category>优化</category>
       </categories>
   </entry>
   <entry>
@@ -819,6 +645,180 @@
       <categories>
         <category>博客</category>
         <category>优化</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>通过码云下载github项目</title>
+    <url>/2020/06/07/%E9%80%9A%E8%BF%87%E7%A0%81%E4%BA%91%E4%B8%8B%E8%BD%BDgithub%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<p>国内从github下载代码速度是大概是20k/s，太耽搁时间了。这里利用码云，下载github代码速度大大提升。</p>
+<p><font color='blue'><a href="https://gitee.com/" target="_blank" rel="noopener">码云</a></font> <a href="https://gitee.com/" target="_blank" rel="noopener">https://gitee.com/</a></p>
+<a id="more"></a>
+
+<h4 id="1-打开码云，选择“从github-gitlab导入仓库”"><a href="#1-打开码云，选择“从github-gitlab导入仓库”" class="headerlink" title="1.打开码云，选择“从github/gitlab导入仓库”"></a>1.打开码云，选择“从github/gitlab导入仓库”</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607203344.png" alt=""></p>
+<h4 id="2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"><a href="#2-根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。" class="headerlink" title="2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。"></a>2.根据方便性，选择导入方式。我这里选了url导入，因为考虑到有分支，导入仓库可能有影响。</h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1591534093567.png" alt=""></p>
+<h4 id="3-点击下载-gt-粘贴url-gt-git-clone-链接"><a href="#3-点击下载-gt-粘贴url-gt-git-clone-链接" class="headerlink" title="3.点击下载&gt;粘贴url&gt;git clone 链接"></a>3.点击<code>下载</code>&gt;<code>粘贴url</code>&gt;<code>git clone 链接</code></h4><p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210441.png" alt=""></p>
+<p><strong>这样下载的代码是master的。</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607215601.png" alt=""></p>
+<p>这里我想下载hexo分支代码。</p>
+<p><strong>注意：直接切换到hexo分支，下载的代码也是master的。这时要hexo设置为默认分支，这样下的代码才是hexo分支里面的。管理&gt;选择分支&gt;设为默认分支。</strong></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607210826.png" alt=""></p>
+<p>设为默认分支：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211006.png" alt=""></p>
+<p>下载的是hexo分支内容：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607211526.png" alt=""></p>
+<p>下载的速度翻了几十倍，奥利给！</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200607220728.png" alt=""></p>
+<p>总结：设置谁为默认分支（default），git clone的就是谁的代码。github也一样。</p>
+]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>黑苹果安装</title>
+    <url>/2020/06/11/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>最近想体验一把苹果仔的快乐，搞一波虚拟机，无奈虚拟机对AMD特别不友好，新建虚拟机有很多问题，最后也没搞定（手动狗头）。对苹果的念想愈加强烈，只能施加于黑苹果了。</p>
+<p>温馨提示：进去安装苹果的界面，用的是手机拍照，比电脑截图要模糊一点。第一次装是以OC引导的。</p>
+<a id="more"></a>
+
+<p>电脑配置：</p>
+<blockquote>
+<p>CPU：AMD Ryzen 5 2600 六核</p>
+<p>主板：微星 B350M</p>
+</blockquote>
+<p>相关网站：</p>
+<blockquote>
+<ul>
+<li>B站   <a href="https://www.bilibili.com/" target="_blank" rel="noopener">https://www.bilibili.com/</a></li>
+<li>远景论坛   <a href="http://bbs.pcbeta.com/" target="_blank" rel="noopener">http://bbs.pcbeta.com/</a></li>
+<li>黑果小兵的部落阁   <a href="https://blog.daliansky.net/" target="_blank" rel="noopener">https://blog.daliansky.net/</a></li>
+<li>黑苹果屋   <a href="http://imacos.top/" target="_blank" rel="noopener">http://imacos.top/</a>   <a href="http://imacos.top/2019/08/01/0914/" target="_blank" rel="noopener">http://imacos.top/2019/08/01/0914/</a></li>
+<li>黑苹果社区   <a href="https://osx.cx/" target="_blank" rel="noopener">https://osx.cx/</a></li>
+</ul>
+</blockquote>
+<p>参考文章：</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/qq_28735663/article/details/99695786" target="_blank" rel="noopener">https://blog.csdn.net/qq_28735663/article/details/99695786</a></p>
+<p><a href="https://blog.csdn.net/weixin_43627371/article/details/104473163" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43627371/article/details/104473163</a></p>
+<p><a href="https://www.jianshu.com/p/81e329c50120" target="_blank" rel="noopener">https://www.jianshu.com/p/81e329c50120</a></p>
+<p><a href="http://imacos.top/2019/08/01/0914/" target="_blank" rel="noopener">http://imacos.top/2019/08/01/0914/</a> </p>
+</blockquote>
+<p>黑苹果相关交流群：</p>
+<p>809418835,   159044520,   452980172,   237591564</p>
+<p>准备工具：</p>
+<blockquote>
+<ul>
+<li>16G以上U盘</li>
+<li>Mac镜像和EHI（EHI包括OC和CLOVER）</li>
+<li>balenaEtcher 软件（U盘写入工具，把Mac镜像写入U盘）</li>
+<li>DiskGenius（分区工具，能浏览管理ESP文件）</li>
+<li>EasyUEFI（管理UEFI）</li>
+</ul>
+</blockquote>
+<p>前面先把一个巨坑踩了，不然后面要哭:weary:。安装Mac过程中要抹盘，提示抹盘失败，是因为ESP空间不足，至少要200M。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_150913.jpg" alt=""></p>
+<p>奇怪！默认的ESP分区大小是98M，而最多只能调到100M，怎么才能搞到200M以上？？其它盘居然不可以分给它容量。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_225629.jpg" alt=""></p>
+<p>在百度搜索了相关内容和去q群请教别人，也搞不懂。固态盘里还有个MBR分区，里面没啥内容，好像没用，就把它删了。果然，最多可以分配230M了。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200612_000313.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_072445.png" alt=""></p>
+<p>应该是固态盘对ESP，MBR有一定的限额，我的最多是230M。</p>
+<p>这下应该可以了吧。但之后进去抹盘还是提示失败。230M怎么还会失败呢。很多资料都说200M以上就可以了。</p>
+<p>是不是因为我抹盘的Mac系统装在机械盘，而ESP分区在固态盘？</p>
+<p>那我在机械盘新建一个ESP分区。结果是只有128M空间。无法满足抹盘条件。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200612_000103.png" alt=""></p>
+<p><strong>小结论：固态盘和机械盘都有固定的ESP容量（还没证实其他人的情况😩）</strong></p>
+<p>所以，应该在固态盘建ESP分区。ESP分区的EHI本来有一个Microsoft的引导文件了，应该跟它并列就行了。</p>
+<p>为了腾出固态盘的空间，整理一下以前安装在C盘的文件，转移到机械盘。这里可以使用电脑管家的软件搬家，还是挺方便的。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613031623.png" alt=""></p>
+<p>把下载的适合自己电脑的EHI文件下的boot和OC复制到EHI文件夹，和Microsoft文件并列，全部替换。注意这里只能用快捷键粘贴，Ctri+C复制，Ctrl+V粘贴。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_190300.png" alt=""></p>
+<p>总算解决了ESP的问题，之后抹盘就能成功了。巨坑踩完！</p>
+<h3 id="一、制作启动U盘"><a href="#一、制作启动U盘" class="headerlink" title="一、制作启动U盘"></a>一、制作启动U盘</h3><p>插入U盘，在balenaEtcher软件导入<code>.dmg</code>镜像文件，Flash（这将删除U盘上的所有文件，请做好备份）</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613022144.png" alt=""></p>
+<h3 id="二、配置OC引导驱动"><a href="#二、配置OC引导驱动" class="headerlink" title="二、配置OC引导驱动"></a>二、配置OC引导驱动</h3><p>1.打开分区工具DiskGenius，找到U盘上的ESP分区，删除自带的EFI文件。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613023159.png" alt=""></p>
+<p>2.把适合自己电脑EFI文件夹复制进去。这里只能用快捷键粘贴，Ctri+C复制，Ctrl+V粘贴。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613023541.png" alt=""></p>
+<p>以上两张图是网友的~</p>
+<h3 id="三、制作Mac系统盘"><a href="#三、制作Mac系统盘" class="headerlink" title="三、制作Mac系统盘"></a>三、制作Mac系统盘</h3><p>注意要分区出来安装黑苹果，也可以另外新买一个空白磁盘（土豪）😄</p>
+<p>我的固态盘只有120G，所以打算在机械盘分区出来装黑苹果。新建卷-不分配驱动号-不格式化，这样苹果系统盘就不会显示Win资源管理器上了。分配了200G</p>
+<img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/个人博客/IMG_20200610_225353.jpg"  />
+
+<p>开头已经踩了这个坑，这个200G没用。只能在固态盘装Mac系统了。经过文件迁移，凑了30G空间。而我只是体验一把苹果仔的快乐，足以。</p>
+<p>开始安装！</p>
+<h3 id="四、安装Mac系统"><a href="#四、安装Mac系统" class="headerlink" title="四、安装Mac系统"></a>四、安装Mac系统</h3><p>开机进入bios系统，设置U盘为第一启动项。</p>
+<p>留意屏幕变化，当出现这个画面，尽快按上下键选择，不然它过两秒就按默认的进去了。这里选择<code>Install macOS</code></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_221349.jpg" alt=""></p>
+<p>它来了！带着优雅和从容！</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_221414.jpg" alt=""></p>
+<p>选择磁盘管理</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200610_222046.jpg" alt=""></p>
+<p>现在抹盘成功！是一个32G的固态盘。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_181332.jpg" alt=""></p>
+<p>退出，选择安装Mac</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_181449.jpg" alt=""></p>
+<p>一路安装下去</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_183437.jpg" alt=""></p>
+<p>进入Mac桌面！苹果仔的快乐就是这么朴实无华且枯燥。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_202621.jpg" alt=""></p>
+<h3 id="五、更改为硬盘启动"><a href="#五、更改为硬盘启动" class="headerlink" title="五、更改为硬盘启动"></a>五、更改为硬盘启动</h3><p>U盘启动每次都要插U盘，不方便，需要更改为硬盘启动。已经装好Mac系统在固态盘了，只需要设置引导就可以。把对应的EHI文件复制过来。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_190300.png" alt=""></p>
+<h4 id="使用EasyUEFI引导工具："><a href="#使用EasyUEFI引导工具：" class="headerlink" title="使用EasyUEFI引导工具："></a>使用EasyUEFI引导工具：</h4><p>1.创建新项</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_190824.png" alt=""></p>
+<p>2.选好类型和改名字，点击浏览文件</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_191529.png" alt=""></p>
+<p>3.选择efi启动文件，我用的是OC引导</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_192006.png" alt=""></p>
+<p>4.调整Mac为第一启动项</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/snipaste_20200611_192157.png" alt=""></p>
+<p>5.选择重启或者自动进入UEFI设置（BIOS）</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613035804.png" alt=""></p>
+<p>安装完毕！</p>
+<p>注意要进BIOS设置Mac为第一启动项，不进硬盘BBS这里选择Mac，上面的启动顺序没有Mac选项。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200611_232403__01.jpg" alt=""></p>
+<p><strong>奇怪的是，弄完Mac为第一启动项，BIOS退出保存。之后界面没有进入Window的选项。要想进去Windows，又得调它为第一启动项。还没弄明白……</strong></p>
+<h3 id="OC引导改为CLOVER引导"><a href="#OC引导改为CLOVER引导" class="headerlink" title="OC引导改为CLOVER引导"></a>OC引导改为CLOVER引导</h3><p>我想可能是OC引导的问题，所以要弄成CLOVER引导。</p>
+<p>直接把CLOVER的文件复制到EHI文件夹里。删除OC的文件。注意，更改了引导方式，要去EasyUEFI软件修改efi文件路径。</p>
+<h3 id="关于黑苹果驱动"><a href="#关于黑苹果驱动" class="headerlink" title="关于黑苹果驱动"></a>关于黑苹果驱动</h3><p>进入系统后，大部分驱动都有，只有声卡驱动没有。从网站<a href="http://imacos.top/2019/08/01/0914/" target="_blank" rel="noopener">http://imacos.top/2019/08/01/0914/</a> 下载并安装声卡驱动，但就是没声音。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200612_234146.jpg" alt=""></p>
+<p>网上资料说通过软件<code>Clover Configurator</code>为CLOVER的<code>config.plist</code>文件注入id，设置id=3。从<a href="https://blog.daliansky.net/AppleALC-Supported-codecs.html" target="_blank" rel="noopener">https://blog.daliansky.net/AppleALC-Supported-codecs.html</a> 找到你的声卡对应的编码。我的声卡型号是892。</p>
+<p>但是设置后也没效果……</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/IMG_20200613_000526.jpg" alt=""></p>
+<p>待续……</p>
+]]></content>
+      <categories>
+        <category>黑苹果</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>阿里云欠费</title>
+    <url>/2020/06/13/%E9%98%BF%E9%87%8C%E4%BA%91%E6%AC%A0%E8%B4%B9/</url>
+    <content><![CDATA[<p>早上阿里云一条信息说我欠费0.04元，一脸懵逼。</p>
+<h3 id="查明欠费原因"><a href="#查明欠费原因" class="headerlink" title="查明欠费原因"></a>查明欠费原因</h3><p>查询网站：</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613151951.png" alt=""></p>
+<a id="more"></a>
+
+<p>不是买了半年共40G流量包嘛，怎么还会欠费！</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613153205.png" alt=""></p>
+<p>原来OSS服务包括<a href="https://help.aliyun.com/document_detail/59636.html#section-uz2-m2t-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">存储费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-gcg-nqt-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">流量费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-msh-3st-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">请求费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-ykd-nst-lgb?_from=help_widget_anchor" target="_blank" rel="noopener">数据处理费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-jyl-k2h-g2f?_from=help_widget_anchor" target="_blank" rel="noopener">对象标签费用</a>、<a href="https://help.aliyun.com/document_detail/59636.html#section-dxe-pq2-8bw?_from=help_widget_anchor" target="_blank" rel="noopener">传输加速费用</a>。OSS（Open Storage Service）是支持任意数据类型的存储服务，支持任意时间、地点的数据上传和下载，OSS中每个存储对象（object）由名称、内容、描述三部分组成。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613152413.png" alt=""></p>
+<p>而我购买的只是标准存储包。应该是其它服务扣费了。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613144237.png" alt=""></p>
+<p>后付费账单都是没有购买资源包的。我这里应该是外网流出费用。外网流出费用：通过互联网从 OSS 浏览数据或下载数据到本地端所产生的流量。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613153904.png" alt=""></p>
+<h3 id="查询扣费明细"><a href="#查询扣费明细" class="headerlink" title="查询扣费明细"></a>查询扣费明细</h3><p>链接：<a href="https://www.aliyun.com/price/product" target="_blank" rel="noopener">阿里云定价_云产品价格</a></p>
+<p>我这里应该涉及的是流量费用和请求费用。其中请求费用几乎可以忽略。</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613161047.png" alt=""></p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613161455.png" alt=""></p>
+<p>在<strong>消费总览</strong>页中，可以看到一列叫做“抹零优惠”的数字。</p>
+<p>对于后付费服务，阿里云计算原价、折扣金额和优惠券抵扣金额时，精确到3位小数。当进行实际结算时，阿里云会自动将3位小数截尾为2位小数。这部分被截尾抹零的总金额称作“抹零优惠”。</p>
+<p>应该是这里的0.04元！</p>
+<p><img src="https://puff-blog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20200613161901.png" alt=""></p>
+<p><strong>特别提醒：当有欠费提醒时，及时处理，避免因欠费被停了服务甚至被删除数据</strong></p>
+]]></content>
+      <categories>
+        <category>阿里云</category>
       </categories>
   </entry>
 </search>
